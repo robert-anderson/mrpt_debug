@@ -1,0 +1,42 @@
+{
+    "bagel": [
+        {
+            "geometry": [
+                {
+                    "xyz": [
+                        -0.0,
+                        -0.0,
+                        -0.0
+                    ],
+                    "atom": "Li"
+                },
+                {
+                    "xyz": [
+                        1.0,
+                        -0.0,
+                        -0.0
+                    ],
+                    "atom": "Li"
+                }
+            ],
+            "df_basis": "/home/mmm0043/Programs/bagel_master/src/basis/cc-pvdz.json",
+            "basis": "/home/mmm0043/Programs/bagel_master/src/basis/cc-pvdz.json",
+            "angstrom": true,
+            "title": "molecule"
+        },
+        {
+            "nstate": 1,
+            "nclosed": 0,
+            "algorithm": "noopt",
+            "title": "casscf",
+            "external_rdm": "fciqmc",
+            "nact": 5
+        },
+        {
+            "frozen": false,
+            "external_rdm": "noref",
+            "method": "caspt2",
+            "title": "smith"
+        }
+    ]
+}

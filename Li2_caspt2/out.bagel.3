@@ -1,0 +1,97 @@
+  * process grid (1, 1) will be used
+    node-k98i-030                   
+
+  * using 24 threads per process
+
+  ===============================================================
+    BAGEL - Freshly leavened quantum chemistry                   
+  ===============================================================
+
+  *** Geometry ***
+
+  { "atom" : "Li", "xyz" : [     -0.000000,     -0.000000,     -0.000000 ] },
+  { "atom" : "Li", "xyz" : [      1.889726,     -0.000000,     -0.000000 ] },
+
+  Number of auxiliary basis functions:       28
+
+  Since a DF basis is specified, we compute 2- and 3-index integrals:
+    o Being stored without compression. Storage requirement is 0.000 GB
+       - 3-index ints prep                         0.00
+       - 3-index ints                              0.01
+       - 2-index ints                              0.00
+       - computing inverse                         0.00
+        elapsed time:        0.01 sec.
+
+
+  Number of basis functions:       28
+  Number of electrons      :        6
+
+
+    * METHOD: MOLECULE                             0.04
+
+       - 3-index ints prep                         0.00
+       - 3-index ints                              0.00
+       - 2-index ints                              0.00
+       - computing inverse                         0.00
+  ---------------------------
+      CASSCF calculation     
+  ---------------------------
+
+    * nstate   :      1
+    * nclosed  :      0
+    * nact     :      5
+    * nvirt    :     23
+  === CASSCF iteration (/home/mmm0043/Programs/bagel_master/src/basis/cc-pvdz.json) ===
+
+    * Using the second-order algorithm
+
+      0  0         0.00000000     5.44e-05      0.00
+
+         res : 7.92e-05   lamb: 1.00e+00   eps : -3.40e-07   step: 6.87e-04    0.00
+         res : 1.12e-05   lamb: 1.00e+00   eps : -3.50e-07   step: 6.34e-04    0.00
+         res : 9.40e-07   lamb: 1.00e+00   eps : -3.50e-07   step: 6.34e-04    0.00
+         res : 1.07e-07   lamb: 1.00e+00   eps : -3.50e-07   step: 6.34e-04    0.00
+         res : 8.05e-09   lamb: 1.00e+00   eps : -3.50e-07   step: 6.34e-04    0.00
+
+    * Max iteration reached during the second-order optimization.  Convergence not reached! *   
+
+
+    * METHOD: CASSCF                               0.02
+
+  ---------------------------
+        FCI calculation      
+  ---------------------------
+
+  Performs exactly the same way as Knowles & Handy 1984 CPL
+
+  o alpha-beta strings
+      length:            20
+  o size of the space 
+      determinant space:  100
+      spin-adapted space: 50
+
+  o single displacement lists (alpha)
+      length:            90
+  o single displacement lists (beta)
+      length:            90
+ Constructing space of all determinants that can formed by removing 1 electron from 3 alpha and 3 beta electrons.
+
+ Space is made up of 4 determinants.
+  o forming links
+    * Integral transformation done. Elapsed time: 0.00
+
+       - jop, kop                                  0.00
+       - denom                                     0.00
+
+Writing integrals to FCIDUMP file
+
+Number of AO basis functions: 28
+Number of MO basis functions to dump: 28
+Writing 2e integral block 
+Writing 1e integral block 
+  -- Termination requested --
+  message: MO integrals are dumped on a file.
+
+  
+  ===============================================================
+
