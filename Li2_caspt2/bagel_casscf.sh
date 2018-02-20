@@ -1,5 +1,7 @@
 #!/bin/bash
 
+source ~/.profile
+
 root_dir=$(pwd)/$(dirname $0)
 
 config_name='Li2'
@@ -12,12 +14,12 @@ do_pt2=true
 use_caspt2_intermediate=true
 tol=1.0E-10
 maxiters=30
-bagel_exe='/home/mmm0043/Programs/bagel_master/obj/src/BAGEL'
+bagel_exe='/Users/Toru/develop/BAGEL/mpichopt/src/BAGEL'
 
 if [ "$trel" = true ]; then
-	neci_exe='/home/mmm0043/Programs/neci_hbrdm/build_release/bin/kneci'
+	neci_exe='/Users/Toru/develop/neci/build/bin/kneci'
 else
-	neci_exe='/home/mmm0043/Programs/neci_hbrdm/build_release/bin/neci'
+	neci_exe='/Users/Toru/develop/neci/build/bin/neci'
 fi
 
 if [ "$do_internal" = true ]; then

@@ -1,4 +1,4 @@
-bagel_basis = "/home/mmm0043/Programs/bagel_master/src/basis/{}.json"
+bagel_basis = "{}"
 configs ={ 
 	'water':
 	{
