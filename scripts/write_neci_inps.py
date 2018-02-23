@@ -18,6 +18,9 @@ elif func_name=='caspt2':
 elif func_name=='caspt2_non_rel':
 	string = neci_inps.caspt2_non_rel(config)
 
+elif func_name=='caspt2_aux':
+	string = neci_inps.caspt2_aux(config)
+
 elif func_name=='caspt2_aux_non_rel':
 	string = neci_inps.caspt2_aux_non_rel(config)
 else:

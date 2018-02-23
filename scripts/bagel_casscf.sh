@@ -1,15 +1,15 @@
 #!/bin/bash
 
-root_dir=$(pwd)/$(dirname $0)
+root_dir=$(pwd)/$(dirname $0)/../scripts
 
-config_name='Li2'
-trel=false
+config_name='N2'
+trel=true
 save_rdms=false
 save_ints=false
 bagel_init_hf_only=false
 do_internal=true
 do_pt2=true
-use_caspt2_intermediate=false
+use_caspt2_intermediate=true
 tol=1.0E-10
 maxiters=30
 
@@ -137,10 +137,13 @@ printf '\n Computing high body RDMs with NECI.\n'
 
 # write BAGEL casscf input file for CASPT2
 if [ "$trel" = true ]; then
-	python $root_dir/write_bagel_inps.py 'caspt2_bagel_inp' $config_name
-else
 	python $root_dir/write_bagel_inps.py 'caspt2_dump_fockmat' $config_name
 	$BAGEL_NECI_DEBUG_BAGEL_EXE caspt2_dump_fockmat.json > caspt2_dump_fockmat.json.out
+	python $root_dir/reformat_fockmat.py
+	python $root_dir/write_bagel_inps.py 'caspt2_bagel_inp' $config_name
+else
+	python $root_dir/write_bagel_inps.py 'caspt2_dump_fockmat_non_rel' $config_name
+	$BAGEL_NECI_DEBUG_BAGEL_EXE caspt2_dump_fockmat_non_rel.json > caspt2_dump_fockmat_non_rel.json.out
 	python $root_dir/reformat_fockmat.py
 	python $root_dir/write_bagel_inps.py 'caspt2_bagel_inp_non_rel' $config_name
 fi

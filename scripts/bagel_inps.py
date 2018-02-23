@@ -258,6 +258,28 @@ def casscf_bagel_inp_internal(config):
 		},
 	]}
 
+def caspt2_dump_fockmat(config):
+	return \
+	{
+    "bagel": [
+		config['mol_spec'],
+		 {
+		  "title" : "zcasscf",
+		  "algorithm" : "noopt",
+		  "nclosed" : config['ncore'],
+		  "nact" : config['ncas'],
+		  "external_rdm" : "fciqmc",
+		  "state" : [1] 
+		},
+
+		{
+		  "title" : "relsmith",
+		  "method" : "caspt2",
+		  "external_rdm" : "noref",
+		  "frozen" : False
+		}
+	]}
+
 # to read in higher body rdms for PT2 correction
 def caspt2_bagel_inp(config):
 	return \
@@ -399,7 +421,7 @@ def casscf_bagel_inp_non_rel_internal(config):
 		}
 	]}
 
-def caspt2_dump_fockmat(config):
+def caspt2_dump_fockmat_non_rel(config):
 	return \
 	{
     "bagel": [
