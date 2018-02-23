@@ -9,15 +9,16 @@ save_ints=false
 bagel_init_hf_only=false
 do_internal=true
 do_pt2=true
-use_caspt2_intermediate=true
+use_caspt2_intermediate=false
 tol=1.0E-10
 maxiters=30
 bagel_exe='/home/mmm0043/Programs/bagel_master/obj/src/BAGEL'
+neci_bin='/home/mmm0043/Programs/neci_hbrdm/build_debug/bin'
 
 if [ "$trel" = true ]; then
-	neci_exe='/home/mmm0043/Programs/neci_hbrdm/build_release/bin/kneci'
+	neci_exe=$neci_bin'/kneci'
 else
-	neci_exe='/home/mmm0043/Programs/neci_hbrdm/build_release/bin/neci'
+	neci_exe=$neci_bin'/neci'
 fi
 
 if [ "$do_internal" = true ]; then
@@ -119,6 +120,7 @@ done
 if [ "$do_pt2" = false ]; then
 	exit 0;
 fi
+printf '\n Computing high body RDMs with NECI.\n'
 
 # write BAGEL casscf input file for CASPT2
 if [ "$trel" = true ]; then
@@ -131,7 +133,11 @@ else
 fi
 # write NECI RDM input file for higher body RDMs
 if [ "$trel" = true ]; then
-	python $root_dir/write_neci_inps.py 'caspt2' $config_name > input.highrdms.neci
+	if [ "$use_caspt2_intermediate" = true ]; then
+		python $root_dir/write_neci_inps.py 'caspt2_aux' $config_name > input.highrdms.neci
+	else
+		python $root_dir/write_neci_inps.py 'caspt2' $config_name > input.highrdms.neci
+	fi
 else
 	if [ "$use_caspt2_intermediate" = true ]; then
 		python $root_dir/write_neci_inps.py 'caspt2_aux_non_rel' $config_name > input.highrdms.neci
@@ -145,12 +151,21 @@ if [ "$trel" = true ]; then
 		cp 1RDM.1 fciqmc_0_0_iter_pt2.rdm1
 		cp 2RDM.1 fciqmc_0_0_iter_pt2.rdm2
 		cp 3RDM.1 fciqmc_0_0_iter_pt2.rdm3
-		cp 4RDM.1 fciqmc_0_0_iter_pt2.rdm4f
+		if [ "$use_caspt2_intermediate" = true ]; then
+			cp CASPT2_AUX.1 fciqmc_0_0_iter_pt2.rdm4f
+		else
+			cp 4RDM.1 fciqmc_0_0_iter_pt2.rdm4
+		fi
 	fi
 	mv 1RDM.1 fciqmc_0_0.rdm1
 	mv 2RDM.1 fciqmc_0_0.rdm2
 	mv 3RDM.1 fciqmc_0_0.rdm3
-	mv 4RDM.1 fciqmc_0_0.rdm4f
+	if [ "$use_caspt2_intermediate" = true ]; then
+		mv CASPT2_AUX.1 fciqmc_0_0.rdm4f
+	else
+		mv 4RDM.1 fciqmc_0_0.rdm4
+		python $root_dir/explicit_4f.py
+	fi
 else
 	if [ "$save_rdms" = true ]; then
 		cp spinfree_OneRDM.1 fciqmc_0_0_iter_pt2.rdm1
@@ -168,7 +183,8 @@ else
 	if [ "$use_caspt2_intermediate" = true ]; then
 		mv spinfree_CASPT2_AUX.1 fciqmc_0_0.rdm4f
 	else
-		mv spinfree_FourRDM.1 fciqmc_0_0.rdm4f
+		mv spinfree_FourRDM.1 fciqmc_0_0.rdm4
+		python $root_dir/explicit_4f.py
 	fi
 fi
 
