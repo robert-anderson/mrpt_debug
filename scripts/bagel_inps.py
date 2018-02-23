@@ -1,4 +1,15 @@
-bagel_basis = "/home/mmm0043/Programs/bagel_master/src/basis/{}.json"
+import os
+
+assert(os.environ.has_key('BAGEL_NECI_DEBUG_BAGEL_BASIS_PATH'))
+
+bagel_basis = os.environ['BAGEL_NECI_DEBUG_BAGEL_BASIS_PATH']
+if bagel_basis=='':
+	bagel_basis = '{}'
+else:
+	if not bagel_basis[-1]=='/':
+		bagel_basis+='/'
+	bagel_basis+='{}.json'
+
 configs ={ 
 	'water':
 	{

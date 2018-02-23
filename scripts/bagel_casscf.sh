@@ -12,24 +12,37 @@ do_pt2=true
 use_caspt2_intermediate=false
 tol=1.0E-10
 maxiters=30
-bagel_exe='/home/mmm0043/Programs/bagel_master/obj/src/BAGEL'
-neci_bin='/home/mmm0043/Programs/neci_hbrdm/build_debug/bin'
+
+if [ -z ${BAGEL_NECI_DEBUG_BAGEL_EXE+_} ]; then 
+	echo "Environment variable BAGEL_NECI_DEBUG_BAGEL_EXE is not set"
+	exit 1
+fi
+
+if [ -z ${BAGEL_NECI_DEBUG_NECI_BIN_PATH+_} ]; then 
+	echo "Environment variable BAGEL_NECI_DEBUG_NECI_BIN_PATH is not set"
+	exit 1
+fi
+
+if [ -z ${BAGEL_NECI_DEBUG_BAGEL_BASIS_PATH+_} ]; then 
+	echo "Environment variable BAGEL_NECI_DEBUG_BAGEL_BASIS_PATH is not set"
+	exit 1
+fi
 
 if [ "$trel" = true ]; then
-	neci_exe=$neci_bin'/kneci'
+	neci_exe=$BAGEL_NECI_DEBUG_NECI_BIN_PATH'/kneci'
 else
-	neci_exe=$neci_bin'/neci'
+	neci_exe=$BAGEL_NECI_DEBUG_NECI_BIN_PATH'/neci'
 fi
 
 if [ "$do_internal" = true ]; then
 	if [ "$trel" = true ]; then
 		python $root_dir/write_bagel_inps.py 'casscf_bagel_inp_internal' $config_name
-		$bagel_exe casscf_bagel_inp_internal.json > casscf_bagel_inp_internal.json.out
+		$BAGEL_NECI_DEBUG_BAGEL_EXE casscf_bagel_inp_internal.json > casscf_bagel_inp_internal.json.out
 		e_casscf=$(python $root_dir/pickup_output.py 'get_casscf_energy_internal' 'casscf_bagel_inp_internal.json.out')
 		printf '\nBAGEL internal CASSCF energy: %12.10f\n' $e_casscf
 		if [ "$do_pt2" = true ]; then
 			python $root_dir/write_bagel_inps.py 'caspt2_bagel_inp_internal' $config_name
-			$bagel_exe caspt2_bagel_inp_internal.json > caspt2_bagel_inp_internal.json.out
+			$BAGEL_NECI_DEBUG_BAGEL_EXE caspt2_bagel_inp_internal.json > caspt2_bagel_inp_internal.json.out
 			e_casscf=$(python $root_dir/pickup_output.py 'get_casscf_energy_internal' 'caspt2_bagel_inp_internal.json.out')
 			e_caspt2=$(python $root_dir/pickup_output.py 'get_caspt2_energy' 'caspt2_bagel_inp_internal.json.out')
 			echo 'BAGEL internal CASSCF energy (from CASPT2 calc): ' $e_casscf
@@ -37,12 +50,12 @@ if [ "$do_internal" = true ]; then
 		fi
 	else
 		python $root_dir/write_bagel_inps.py 'casscf_bagel_inp_non_rel_internal' $config_name
-		$bagel_exe casscf_bagel_inp_non_rel_internal.json > casscf_bagel_inp_non_rel_internal.json.out
+		$BAGEL_NECI_DEBUG_BAGEL_EXE casscf_bagel_inp_non_rel_internal.json > casscf_bagel_inp_non_rel_internal.json.out
 		e_casscf=$(python $root_dir/pickup_output.py 'get_casscf_energy_internal' 'casscf_bagel_inp_non_rel_internal.json.out')
 		printf '\nBAGEL internal CASSCF energy: %12.10f\n' $e_casscf
 		if [ "$do_pt2" = true ]; then
 			python $root_dir/write_bagel_inps.py 'caspt2_bagel_inp_non_rel_internal' $config_name
-			$bagel_exe caspt2_bagel_inp_non_rel_internal.json > caspt2_bagel_inp_non_rel_internal.json.out
+			$BAGEL_NECI_DEBUG_BAGEL_EXE caspt2_bagel_inp_non_rel_internal.json > caspt2_bagel_inp_non_rel_internal.json.out
 			e_casscf=$(python $root_dir/pickup_output.py 'get_casscf_energy_internal' 'caspt2_bagel_inp_non_rel_internal.json.out')
 			e_caspt2=$(python $root_dir/pickup_output.py 'get_caspt2_energy' 'caspt2_bagel_inp_non_rel_internal.json.out')
 			echo 'BAGEL internal CASSCF energy (from CASPT2 calc): ' $e_casscf
@@ -54,10 +67,10 @@ fi
 printf '\nInitialising CASSCF reference\n'
 if [ "$trel" = true ]; then
 	python $root_dir/write_bagel_inps.py 'init_bagel_inp' $config_name $bagel_init_hf_only
-    $bagel_exe init_bagel_inp.json > init_bagel_inp.json.out
+    $BAGEL_NECI_DEBUG_BAGEL_EXE init_bagel_inp.json > init_bagel_inp.json.out
 else
 	python $root_dir/write_bagel_inps.py 'init_bagel_inp_non_rel' $config_name $bagel_init_hf_only
-    $bagel_exe init_bagel_inp_non_rel.json > init_bagel_inp_non_rel.json.out
+    $BAGEL_NECI_DEBUG_BAGEL_EXE init_bagel_inp_non_rel.json > init_bagel_inp_non_rel.json.out
 fi
 
 # write BAGEL casscf input file for iterations
@@ -109,9 +122,9 @@ for it in $(seq 1 $maxiters); do
 		mv FCIDUMP FCIDUMP_iter_$it
 	fi
 	if [ "$trel" = true ]; then
-		$bagel_exe casscf_bagel_inp.json > out.bagel.$it
+		$BAGEL_NECI_DEBUG_BAGEL_EXE casscf_bagel_inp.json > out.bagel.$it
 	else
-		$bagel_exe casscf_bagel_inp_non_rel.json > out.bagel.$it
+		$BAGEL_NECI_DEBUG_BAGEL_EXE casscf_bagel_inp_non_rel.json > out.bagel.$it
 	fi
     cp casscf.log casscf.log.$it
 
@@ -127,7 +140,7 @@ if [ "$trel" = true ]; then
 	python $root_dir/write_bagel_inps.py 'caspt2_bagel_inp' $config_name
 else
 	python $root_dir/write_bagel_inps.py 'caspt2_dump_fockmat' $config_name
-	$bagel_exe caspt2_dump_fockmat.json > caspt2_dump_fockmat.json.out
+	$BAGEL_NECI_DEBUG_BAGEL_EXE caspt2_dump_fockmat.json > caspt2_dump_fockmat.json.out
 	python $root_dir/reformat_fockmat.py
 	python $root_dir/write_bagel_inps.py 'caspt2_bagel_inp_non_rel' $config_name
 fi
@@ -189,9 +202,9 @@ else
 fi
 
 if [ "$trel" = true ]; then
-	$bagel_exe caspt2_bagel_inp.json > out.bagel.pt2
+	$BAGEL_NECI_DEBUG_BAGEL_EXE caspt2_bagel_inp.json > out.bagel.pt2
 else
-	$bagel_exe caspt2_bagel_inp_non_rel.json > out.bagel.pt2
+	$BAGEL_NECI_DEBUG_BAGEL_EXE caspt2_bagel_inp_non_rel.json > out.bagel.pt2
 fi
 
 e_caspt2=$(python $root_dir/pickup_output.py 'get_caspt2_energy' 'out.bagel.pt2' $e_rdm)
