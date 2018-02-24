@@ -1,0 +1,61 @@
+  * process grid (1, 1) will be used
+    node-k98n-030                   
+
+  * using 24 threads per process
+
+  ===============================================================
+    BAGEL - Freshly leavened quantum chemistry                   
+  ===============================================================
+
+  *** Geometry ***
+
+  { "atom" : "Li", "xyz" : [     -0.000000,     -0.000000,     -0.000000 ] },
+  { "atom" : "Li", "xyz" : [      1.889726,     -0.000000,     -0.000000 ] },
+
+  Number of auxiliary basis functions:       28
+
+  Since a DF basis is specified, we compute 2- and 3-index integrals:
+    o Being stored without compression. Storage requirement is 0.000 GB
+       - 3-index ints prep                         0.00
+       - 3-index ints                              0.01
+       - 2-index ints                              0.00
+       - computing inverse                         0.00
+        elapsed time:        0.02 sec.
+
+
+  Number of basis functions:       28
+  Number of electrons      :        6
+
+
+    * METHOD: MOLECULE                             0.04
+
+       - 3-index ints prep                         0.00
+       - 3-index ints                              0.00
+       - 2-index ints                              0.00
+       - computing inverse                         0.00
+  ---------------------------
+      CASSCF calculation     
+  ---------------------------
+
+    * nstate   :      1
+    * nclosed  :      0
+    * nact     :      5
+    * nvirt    :     23
+  === CASSCF iteration (/home/mmm0043/Programs/bagel_master/src/basis/cc-pvdz.json) ===
+
+    * No orbital optimization will be performed!
+
+
+    * METHOD: CASSCF                               0.01
+
+  === SMITH program ===
+
+    * Approximate memory requirement for SMITH calulation per MPI process:
+      o Storage requirement for T-amplitude, lambda, and residual is 0.00 GB
+      o Storage requirement for MO integrals is 0.00 GB
+  -- Termination requested --
+  message: Fock matrix has been dumped in FOCKMAT
+
+  
+  ===============================================================
+

@@ -1,0 +1,22 @@
+
+BAGEL internal CASSCF energy: -15.0174271800
+BAGEL internal CASSCF energy (from CASPT2 calc):  -15.01742718
+BAGEL internal CASPT2 energy:  -15.0243935738
+
+Initialising CASSCF reference
+
+Starting CASSCF loop
+
+    iter      E_2RDM      difference
+     1    -14.9987114679
+     2    -15.0170039145  -0.0182924466
+     3    -15.0174269914  -0.0004230769
+     4    -15.0174271757  -0.0000001843
+     5    -15.0174271763  -0.0000000006
+     6    -15.0174271763  0.0000000000
+
+ Convergence reached.
+
+ Computing high body RDMs with NECI.
+
+CASPT2 energy from NECI RDMs: -15.0244155553

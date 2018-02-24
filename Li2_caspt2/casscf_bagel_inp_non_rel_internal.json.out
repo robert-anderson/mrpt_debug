@@ -1,5 +1,5 @@
   * process grid (1, 1) will be used
-    node-k98i-030                   
+    node-k98n-030                   
 
   * using 24 threads per process
 
@@ -20,7 +20,7 @@
        - 3-index ints                              0.01
        - 2-index ints                              0.00
        - computing inverse                         0.00
-        elapsed time:        0.02 sec.
+        elapsed time:        0.01 sec.
 
 
   Number of basis functions:       28
@@ -113,7 +113,7 @@
 
     * Using the second-order algorithm
 
-      0  0       -14.99871146     4.75e-03      0.01
+      0  0       -14.99871146     4.75e-03      0.00
 
          res : 2.98e-02   lamb: 1.00e+00   eps : -2.37e-02   step: 5.85e-01    0.00
          res : 4.67e-03   lamb: 1.00e+00   eps : -2.45e-02   step: 5.90e-01    0.00
@@ -166,7 +166,7 @@
       5  0       -15.01742718     2.44e-09      0.00
       6  0 *     -15.01742718     2.65e-11      0.00
 
-     * ci vector, state   0, <S^2> = -0.0000
+     * ci vector, state   0, <S^2> = 0.0000
        222..     0.9088082227
        22.2.    -0.2950147779
        22..2    -0.2950147779

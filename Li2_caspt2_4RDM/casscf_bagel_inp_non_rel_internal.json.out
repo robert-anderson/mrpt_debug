@@ -1,0 +1,179 @@
+  * process grid (1, 1) will be used
+    node-k98n-030                   
+
+  * using 24 threads per process
+
+  ===============================================================
+    BAGEL - Freshly leavened quantum chemistry                   
+  ===============================================================
+
+  *** Geometry ***
+
+  { "atom" : "Li", "xyz" : [     -0.000000,     -0.000000,     -0.000000 ] },
+  { "atom" : "Li", "xyz" : [      1.889726,     -0.000000,     -0.000000 ] },
+
+  Number of auxiliary basis functions:       28
+
+  Since a DF basis is specified, we compute 2- and 3-index integrals:
+    o Being stored without compression. Storage requirement is 0.000 GB
+       - 3-index ints prep                         0.00
+       - 3-index ints                              0.01
+       - 2-index ints                              0.00
+       - computing inverse                         0.01
+        elapsed time:        0.02 sec.
+
+
+  Number of basis functions:       28
+  Number of electrons      :        6
+
+
+    * METHOD: MOLECULE                             0.04
+
+       - Overlap matrix                            0.00
+       - Hcore matrix                              0.00
+       - Overlap orthog                            0.00
+
+  *** RHF ***
+
+  === Nuclear Repulsion ===
+  
+     4.7625948960
+
+      * DIIS with orbital gradients will be used.
+
+       - SCF startup                               0.03
+
+  === RHF iteration (/home/mmm0043/Programs/bagel_master/src/basis/cc-pvdz.json) ===
+  
+               o Fock build                                  0.00
+      0        -14.97653105          0.00288138           0.00
+               o DIIS                                        0.00
+               o Diag                                        0.00
+               o Post process                                0.00
+               o Fock build                                  0.00
+      1        -14.98032686          0.00072220           0.00
+               o DIIS                                        0.00
+               o Diag                                        0.00
+               o Post process                                0.00
+               o Fock build                                  0.00
+      2        -14.98065716          0.00010340           0.00
+               o DIIS                                        0.00
+               o Diag                                        0.00
+               o Post process                                0.00
+               o Fock build                                  0.00
+      3        -14.98066641          0.00000866           0.00
+               o DIIS                                        0.00
+               o Diag                                        0.00
+               o Post process                                0.00
+               o Fock build                                  0.00
+      4        -14.98066647          0.00000024           0.00
+               o DIIS                                        0.00
+               o Diag                                        0.00
+               o Post process                                0.00
+               o Fock build                                  0.00
+      5        -14.98066647          0.00000008           0.00
+               o DIIS                                        0.00
+               o Diag                                        0.00
+               o Post process                                0.00
+               o Fock build                                  0.00
+      6        -14.98066647          0.00000001           0.00
+               o DIIS                                        0.00
+               o Diag                                        0.00
+               o Post process                                0.00
+               o Fock build                                  0.00
+      7        -14.98066647          0.00000000           0.00
+               o DIIS                                        0.00
+               o Diag                                        0.00
+               o Post process                                0.00
+               o Fock build                                  0.00
+      8        -14.98066647          0.00000000           0.00
+               o DIIS                                        0.00
+               o Diag                                        0.00
+               o Post process                                0.00
+               o Fock build                                  0.00
+      9        -14.98066647          0.00000000           0.00
+  
+    * SCF iteration converged.
+
+    * Permanent dipole moment:
+           (   -0.000000,    -0.000000,     0.000000) a.u.
+
+
+    * METHOD: HF                                   0.06
+
+  ---------------------------
+      CASSCF calculation     
+  ---------------------------
+
+    * nstate   :      1
+    * nclosed  :      0
+    * nact     :      5
+    * nvirt    :     23
+  === CASSCF iteration (/home/mmm0043/Programs/bagel_master/src/basis/cc-pvdz.json) ===
+
+    * Using the second-order algorithm
+
+      0  0       -14.99871146     4.75e-03      0.01
+
+         res : 2.98e-02   lamb: 1.00e+00   eps : -2.37e-02   step: 5.85e-01    0.00
+         res : 4.68e-03   lamb: 1.00e+00   eps : -2.45e-02   step: 5.90e-01    0.00
+         res : 3.39e-04   lamb: 1.00e+00   eps : -2.45e-02   step: 5.90e-01    0.00
+         res : 9.70e-06   lamb: 1.00e+00   eps : -2.45e-02   step: 5.90e-01    0.00
+      1  0       -15.01700391     1.71e-03      0.01
+
+         res : 3.84e-03   lamb: 1.00e+00   eps : -8.13e-04   step: 7.49e-02    0.00
+         res : 4.28e-04   lamb: 1.00e+00   eps : -8.33e-04   step: 7.66e-02    0.00
+         res : 3.26e-05   lamb: 1.00e+00   eps : -8.33e-04   step: 7.65e-02    0.00
+         res : 2.60e-06   lamb: 1.00e+00   eps : -8.33e-04   step: 7.65e-02    0.00
+      2  0       -15.01742699     5.44e-05      0.01
+
+         res : 7.79e-05   lamb: 1.00e+00   eps : -3.40e-07   step: 6.82e-04    0.00
+         res : 1.02e-05   lamb: 1.00e+00   eps : -3.49e-07   step: 6.34e-04    0.00
+         res : 7.38e-07   lamb: 1.00e+00   eps : -3.49e-07   step: 6.33e-04    0.00
+         res : 1.11e-07   lamb: 1.00e+00   eps : -3.49e-07   step: 6.33e-04    0.00
+         res : 8.34e-09   lamb: 1.00e+00   eps : -3.49e-07   step: 6.33e-04    0.00
+      3  0       -15.01742718     2.89e-06      0.01
+
+         res : 4.30e-06   lamb: 1.00e+00   eps : -1.08e-09   step: 5.17e-05    0.00
+         res : 4.40e-07   lamb: 1.00e+00   eps : -1.10e-09   step: 4.95e-05    0.00
+         res : 3.42e-08   lamb: 1.00e+00   eps : -1.10e-09   step: 4.95e-05    0.00
+         res : 5.93e-09   lamb: 1.00e+00   eps : -1.10e-09   step: 4.94e-05    0.00
+         res : 3.78e-10   lamb: 1.00e+00   eps : -1.10e-09   step: 4.94e-05    0.00
+      4  0       -15.01742718     1.70e-07      0.01
+
+         res : 2.54e-07   lamb: 1.00e+00   eps : -3.73e-12   step: 3.06e-06    0.00
+         res : 2.60e-08   lamb: 1.00e+00   eps : -3.80e-12   step: 2.93e-06    0.00
+         res : 2.01e-09   lamb: 1.00e+00   eps : -3.80e-12   step: 2.92e-06    0.00
+      5  0       -15.01742718     1.01e-08      0.01
+
+         res : 1.50e-08   lamb: 1.00e+00   eps : -1.29e-14   step: 1.76e-07    0.00
+         res : 1.57e-09   lamb: 1.00e+00   eps : -1.32e-14   step: 1.68e-07    0.00
+      6  0       -15.01742718     6.10e-10      0.01
+
+    * Second-order optimization converged. *   
+
+    * Integral transformation done. Elapsed time: 0.00
+
+     guess   0:   closed 111..                open .....               
+
+  === FCI iteration ===
+
+      0  0       -14.97852790     8.63e-03      0.00
+      1  0       -15.01738514     1.09e-03      0.00
+      2  0       -15.01742717     2.28e-05      0.00
+      3  0       -15.01742718     1.42e-06      0.00
+      4  0       -15.01742718     4.42e-08      0.00
+      5  0       -15.01742718     2.44e-09      0.00
+      6  0 *     -15.01742718     2.65e-11      0.00
+
+     * ci vector, state   0, <S^2> = 0.0000
+       222..     0.9088082227
+       22.2.    -0.2950147779
+       22..2    -0.2950147779
+
+    * METHOD: CASSCF                               0.06
+
+
+  
+  ===============================================================
+

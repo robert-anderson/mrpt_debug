@@ -21,6 +21,9 @@ elif func_name=='caspt2_bagel_inp_internal':
 elif func_name=='caspt2_dump_fockmat':
 	json_dict = bagel_inps.caspt2_dump_fockmat(config)
 
+elif func_name=='caspt2_dump_fockmat_non_rel':
+	json_dict = bagel_inps.caspt2_dump_fockmat_non_rel(config)
+
 elif func_name=='caspt2_bagel_inp_non_rel':
 	json_dict = bagel_inps.caspt2_bagel_inp_non_rel(config)
 

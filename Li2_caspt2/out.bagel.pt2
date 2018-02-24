@@ -1,5 +1,5 @@
   * process grid (1, 1) will be used
-    node-k98i-030                   
+    node-k98n-030                   
 
   * using 24 threads per process
 
@@ -19,7 +19,7 @@
        - 3-index ints prep                         0.00
        - 3-index ints                              0.01
        - 2-index ints                              0.00
-       - computing inverse                         0.00
+       - computing inverse                         0.01
         elapsed time:        0.02 sec.
 
 
@@ -56,19 +56,19 @@
        - MO integral evaluation                    0.01
     * Calculating and saving rdm4f
 
-    - linear dependency detected:    6 /   25    min eigenvalue:    -1.0083e-12    max eigenvalue:     4.6915e-10
-    - linear dependency detected:   11 /   50    min eigenvalue:    -3.8404e-13    max eigenvalue:     1.3646e-11
-    - linear dependency detected:   66 /  125    min eigenvalue:    -4.3627e-12    max eigenvalue:     1.6443e-11
-    - linear dependency detected:   87 /  125    min eigenvalue:    -8.0726e-12    max eigenvalue:     2.1061e-11
-       - RDM + denominator evaluation              0.12
+    - linear dependency detected:    6 /   25    min eigenvalue:    -1.0071e-12    max eigenvalue:     4.6916e-10
+    - linear dependency detected:   11 /   50    min eigenvalue:    -3.8369e-13    max eigenvalue:     1.3646e-11
+    - linear dependency detected:   66 /  125    min eigenvalue:    -4.3644e-12    max eigenvalue:     1.6443e-11
+    - linear dependency detected:   87 /  125    min eigenvalue:    -8.0785e-12    max eigenvalue:     2.1065e-11
+       - RDM + denominator evaluation              0.09
 
     * Zeroth order energy : state  0      -11.6013641039
 
       ---- iteration ----
 
         0    -0.00052729     0.02755249      0.02
-        1    -0.26194114     0.02495127      0.02
-        2    -0.12826660     0.01064557      0.02
+        1    -0.26194108     0.02495127      0.02
+        2    -0.12826663     0.01064558      0.02
         3    -0.01478146     0.00280918      0.02
         4    -0.00700249     0.00165573      0.02
         5    -0.00707285     0.00164045      0.02
@@ -94,66 +94,99 @@
        25    -0.00698836     0.00162473      0.02
        26    -0.00698836     0.00162473      0.02
        27    -0.00698837     0.00162473      0.02
-       28    -0.00698836     0.00162473      0.02
+    - linear dependency detected:    1 /   10    min eigenvalue:     9.0511e-09    max eigenvalue:     9.0511e-09
+    * Using canonical orthogonalization due to linear dependency
+
+       28    -0.00698837     0.00162473      0.02
        29    -0.00698837     0.00162473      0.02
        30    -0.00698838     0.00162473      0.02
-    - linear dependency detected:    1 /   10    min eigenvalue:     8.9654e-09    max eigenvalue:     8.9654e-09
+    - linear dependency detected:    1 /   10    min eigenvalue:     1.2185e-09    max eigenvalue:     1.2185e-09
     * Using canonical orthogonalization due to linear dependency
 
        31    -0.00698838     0.00162473      0.02
-       32    -0.00698839     0.00162473      0.02
-    - linear dependency detected:    1 /   10    min eigenvalue:     5.2793e-09    max eigenvalue:     5.2793e-09
+    - linear dependency detected:    2 /   10    min eigenvalue:     1.0772e-09    max eigenvalue:     8.8909e-09
     * Using canonical orthogonalization due to linear dependency
 
-       33    -0.00698840     0.00162473      0.02
-       34    -0.00698839     0.00162473      0.02
-       35    -0.00698839     0.00162473      0.02
+       32    -0.00698837     0.00162473      0.02
+    - linear dependency detected:    1 /   10    min eigenvalue:     5.8410e-10    max eigenvalue:     5.8410e-10
+    * Using canonical orthogonalization due to linear dependency
+
+       33    -0.00698838     0.00162473      0.02
+    - linear dependency detected:    1 /   10    min eigenvalue:     3.2252e-10    max eigenvalue:     3.2252e-10
+    * Using canonical orthogonalization due to linear dependency
+
+       34    -0.00698838     0.00162473      0.02
+    - linear dependency detected:    1 /   10    min eigenvalue:     3.3018e-10    max eigenvalue:     3.3018e-10
+    * Using canonical orthogonalization due to linear dependency
+
+       35    -0.00698838     0.00162473      0.02
+    - linear dependency detected:    1 /   10    min eigenvalue:     1.3723e-09    max eigenvalue:     1.3723e-09
+    * Using canonical orthogonalization due to linear dependency
+
        36    -0.00698838     0.00162473      0.02
+    - linear dependency detected:    1 /   10    min eigenvalue:     2.0750e-09    max eigenvalue:     2.0750e-09
+    * Using canonical orthogonalization due to linear dependency
+
        37    -0.00698838     0.00162473      0.02
-       38    -0.00698839     0.00162473      0.02
+    - linear dependency detected:    2 /   10    min eigenvalue:     7.5706e-10    max eigenvalue:     7.0196e-09
+    * Using canonical orthogonalization due to linear dependency
+
+       38    -0.00698838     0.00162473      0.02
+    - linear dependency detected:    1 /   10    min eigenvalue:     6.0881e-10    max eigenvalue:     6.0881e-10
+    * Using canonical orthogonalization due to linear dependency
+
        39    -0.00698838     0.00162473      0.02
+    - linear dependency detected:    1 /   10    min eigenvalue:     6.8991e-10    max eigenvalue:     6.8991e-10
+    * Using canonical orthogonalization due to linear dependency
+
        40    -0.00698838     0.00162473      0.02
+    - linear dependency detected:    1 /   10    min eigenvalue:     7.8805e-09    max eigenvalue:     7.8805e-09
+    * Using canonical orthogonalization due to linear dependency
+
        41    -0.00698838     0.00162473      0.02
-       42    -0.00698839     0.00162473      0.02
-    - linear dependency detected:    1 /   10    min eigenvalue:     5.5237e-09    max eigenvalue:     5.5237e-09
+    - linear dependency detected:    1 /   10    min eigenvalue:     7.8766e-09    max eigenvalue:     7.8766e-09
     * Using canonical orthogonalization due to linear dependency
 
-       43    -0.00698839     0.00162473      0.02
-    - linear dependency detected:    1 /   10    min eigenvalue:     4.6090e-09    max eigenvalue:     4.6090e-09
+       42    -0.00698838     0.00162473      0.02
+    - linear dependency detected:    1 /   10    min eigenvalue:     7.6495e-09    max eigenvalue:     7.6495e-09
     * Using canonical orthogonalization due to linear dependency
 
-       44    -0.00698839     0.00162473      0.02
-    - linear dependency detected:    1 /   10    min eigenvalue:     7.4714e-09    max eigenvalue:     7.4714e-09
+       43    -0.00698838     0.00162473      0.02
+    - linear dependency detected:    1 /   10    min eigenvalue:     7.6219e-09    max eigenvalue:     7.6219e-09
     * Using canonical orthogonalization due to linear dependency
 
-       45    -0.00698839     0.00162473      0.02
-    - linear dependency detected:    1 /   10    min eigenvalue:     4.7361e-10    max eigenvalue:     4.7361e-10
+       44    -0.00698838     0.00162473      0.02
+    - linear dependency detected:    1 /   10    min eigenvalue:     7.5279e-09    max eigenvalue:     7.5279e-09
     * Using canonical orthogonalization due to linear dependency
 
-       46    -0.00698839     0.00162473      0.02
-    - linear dependency detected:    1 /   10    min eigenvalue:     5.2700e-10    max eigenvalue:     5.2700e-10
+       45    -0.00698838     0.00162473      0.02
+    - linear dependency detected:    2 /   10    min eigenvalue:     4.1935e-09    max eigenvalue:     9.3931e-09
     * Using canonical orthogonalization due to linear dependency
 
-       47    -0.00698839     0.00162473      0.02
-    - linear dependency detected:    1 /   10    min eigenvalue:     5.0488e-10    max eigenvalue:     5.0488e-10
+       46    -0.00698838     0.00162473      0.02
+    - linear dependency detected:    2 /   10    min eigenvalue:     1.7873e-09    max eigenvalue:     5.2353e-09
     * Using canonical orthogonalization due to linear dependency
 
-       48    -0.00698839     0.00162473      0.02
-    - linear dependency detected:    1 /   10    min eigenvalue:     5.0547e-10    max eigenvalue:     5.0547e-10
+       47    -0.00698838     0.00162473      0.02
+    - linear dependency detected:    2 /   10    min eigenvalue:     1.5641e-09    max eigenvalue:     2.7920e-09
     * Using canonical orthogonalization due to linear dependency
 
-       49    -0.00698839     0.00162473      0.02
+       48    -0.00698838     0.00162473      0.02
+    - linear dependency detected:    1 /   10    min eigenvalue:     2.0061e-09    max eigenvalue:     2.0061e-09
+    * Using canonical orthogonalization due to linear dependency
+
+       49    -0.00698838     0.00162473      0.02
 
       -------------------
       *** Convergence not reached ***
 
-       - CASPT2 energy evaluation                  1.10
+       - CASPT2 energy evaluation                  1.11
 
-    * CASPT2 energy : state  0       -0.0069883899
-        reference weight              0.4377789557
+    * CASPT2 energy : state  0       -0.0069883790
+        reference weight              0.4494418104
 
 
-    * METHOD: SMITH                                1.23
+    * METHOD: SMITH                                1.21
 
 
   

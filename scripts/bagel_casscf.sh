@@ -2,7 +2,7 @@
 
 root_dir=$(pwd)/$(dirname $0)/../scripts
 
-config_name='N2'
+config_name='Li2'
 trel=true
 save_rdms=false
 save_ints=false

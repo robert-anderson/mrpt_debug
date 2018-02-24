@@ -1,0 +1,349 @@
+ Initing MPI
+ Number of processors:            1
+ Processor            1 /           1  as head node.
+ Sum:            1
+ Memory Manager initialised with  99999.0 MB
+
+ ================================================================
+ Compiled on Feb 21 2018 at 03:28:12
+ Compiled using configuration:
+     cmake-Intel-par-DEBUG
+ VCS BASE repository version:
+     b736e3c264c51224d31bfdf8c8590fd3de77526c
+ Working directory: 
+     /scratch/scratch/mmm0043/work/stochastic_multireference/bagel/interface_test/mrpt_debug/Li2_caspt2_4RDM
+ Running on: node-k98n-030
+ Started running on 24/02/2018 at 04:13:05
+ ================================================================
+
+ Processing arguments
+ input.neci                                                                     
+                                                                                
+                                                                                
+                   
+ Reading from file: input.neci
+ Using the default set of defaults.
+
+****************************************************************
+
+
+title
+
+system read noorder
+symignoreenergies
+freeformat
+electrons 6
+
+spin-restrict 0
+sym 0 0 0 0
+nonuniformrandexcits 4IND-WEIGHTED
+nobrillouintheorem
+endsys
+
+calc
+methods
+method vertex fcimc
+endmethods
+fci-init
+
+tau 0.01
+memoryfacpart 2.0
+memoryfacspawn 20.0
+totalwalkers 5000
+nmcyc 4000
+seed 17
+startsinglepart 100
+diagshift 0.100000
+rdmsamplingiters 200000
+shiftdamp 0.05
+truncinitiator
+addtoinitiator 3
+allrealcoeff
+realspawncutoff 0.4
+jump-shift
+proje-changeref 1.5
+stepsshift 10
+maxwalkerbloom 3
+load-balance-blocks off
+endcalc
+
+integral
+freeze 0 0
+endint
+
+logging
+binarypops
+exactrdm
+explicitallrdm
+
+calcrdmonfly 3 1000 5000
+
+write-spin-free-rdm
+printonerdm
+print-one-rdm-occupations
+endlog
+end
+
+****************************************************************
+
+ Allocating each processor as a separate node.
+ Processor      Node
+         0         0
+ I am the node root for node            0
+======== SYSTEM ==========
+  NUMBER OF ELECTRONS :     6
+  Restricting the spin state of the system, TSPN :  T
+  GLOBAL MS :            0
+  *** GENERIC SYSTEM ***  
+ Only one irrep found. Turning off symmetry for rest of calculation.
+  NUMBER OF SPIN ORBITALS IN BASIS :    10
+*** CREATING BASIS FNs FROM FCIDUMP ***
+  Maximum number of symmetries:   1
+ Turning Symmetry off
+  Generating abelian symmetry table with  0 generators
+  Number of symmetry classes: 1
+HF determinant not yet defined.
+      1      1      0      0      0     -1 ( 0, 0, 0) 0   0       -6.155549737       -6.155549737
+      2      2      0      0      0      1 ( 0, 0, 0) 0   0       -6.155549737       -6.155549737
+      3      3      0      0      0     -1 ( 0, 0, 0) 0   0       -5.943502900       -5.943502900
+      4      4      0      0      0      1 ( 0, 0, 0) 0   0       -5.943502900       -5.943502900
+      5      5      0      0      0     -1 ( 0, 0, 0) 0   0       -1.749837040       -1.749837040
+      6      6      0      0      0      1 ( 0, 0, 0) 0   0       -1.749837040       -1.749837040
+      7      7      0      0      0     -1 ( 0, 0, 0) 0   0       -1.733355355       -1.733355355
+      8      8      0      0      0      1 ( 0, 0, 0) 0   0       -1.733355355       -1.733355355
+      9      9      0      0      0     -1 ( 0, 0, 0) 0   0       -1.733355355       -1.733355355
+     10     10      0      0      0      1 ( 0, 0, 0) 0   0       -1.733355355       -1.733355355
+ Turning Symmetry off
+*** READING PRIMITIVE INTEGRALS FROM FCIDUMP ***
+ UMatSize:                    120
+Memory required for integral storage:     0.9155273437E-03 Mb/Shared Memory
+Allocated                960 bytes of shared memory named: umat
+Two-electron integrals with a magnitude over    0.1000000E-07 are screened
+Ignoring integral (chem. notation) (   3   3|   2   1):   1.169195782349020E-009
+Ignoring integral (chem. notation) (   4   4|   2   1):   1.699427553795650E-009
+Ignoring integral (chem. notation) (   5   5|   2   1):   1.700752677923830E-009
+Ignoring integral (chem. notation) (   3   2|   3   1):  -2.012861452350460E-009
+Ignoring integral (chem. notation) (   2   3|   3   1):  -2.012861456104180E-009
+Ignoring integral (chem. notation) (   3   3|   1   2):   1.169195977343360E-009
+Ignoring integral (chem. notation) (   4   4|   1   2):   1.699427762310060E-009
+Ignoring integral (chem. notation) (   5   5|   1   2):   1.700752872387510E-009
+Ignoring integral (chem. notation) (   3   1|   3   2):  -2.012861452350460E-009
+Ignoring integral (chem. notation) (   1   3|   3   2):  -2.012861460569650E-009
+Ignoring integral (chem. notation) (   4   3|   4   2):  -7.254566201827030E-009
+Ignoring integral (chem. notation) (   3   4|   4   2):  -7.254566204060380E-009
+Ignoring integral (chem. notation) (   5   3|   5   2):  -7.254760742518390E-009
+Ignoring integral (chem. notation) (   3   5|   5   2):  -7.254760724511060E-009
+Ignoring integral (chem. notation) (   3   2|   1   3):  -2.012861460569650E-009
+Ignoring integral (chem. notation) (   2   3|   1   3):  -2.012861464321240E-009
+Ignoring integral (chem. notation) (   3   1|   2   3):  -2.012861456104180E-009
+Ignoring integral (chem. notation) (   1   3|   2   3):  -2.012861464321240E-009
+Ignoring integral (chem. notation) (   2   1|   3   3):   1.169195782349020E-009
+Ignoring integral (chem. notation) (   1   2|   3   3):   1.169195977343360E-009
+Ignoring integral (chem. notation) (   4   2|   4   3):  -7.254566201827030E-009
+Ignoring integral (chem. notation) (   2   4|   4   3):  -7.254566198707280E-009
+Ignoring integral (chem. notation) (   5   2|   5   3):  -7.254760742518390E-009
+Ignoring integral (chem. notation) (   2   5|   5   3):  -7.254760742816540E-009
+Ignoring integral (chem. notation) (   4   3|   2   4):  -7.254566198707280E-009
+Ignoring integral (chem. notation) (   3   4|   2   4):  -7.254566200940620E-009
+Ignoring integral (chem. notation) (   4   2|   3   4):  -7.254566204060380E-009
+Ignoring integral (chem. notation) (   2   4|   3   4):  -7.254566200940620E-009
+Ignoring integral (chem. notation) (   2   1|   4   4):   1.699427553795650E-009
+Ignoring integral (chem. notation) (   1   2|   4   4):   1.699427762310060E-009
+Ignoring integral (chem. notation) (   5   3|   2   5):  -7.254760742816540E-009
+Ignoring integral (chem. notation) (   3   5|   2   5):  -7.254760724483960E-009
+Ignoring integral (chem. notation) (   5   2|   3   5):  -7.254760724511060E-009
+Ignoring integral (chem. notation) (   2   5|   3   5):  -7.254760724483960E-009
+Ignoring integral (chem. notation) (   2   1|   5   5):   1.700752681935380E-009
+Ignoring integral (chem. notation) (   1   2|   5   5):   1.700752873405480E-009
+ Number of removed two-index integrals:                     36
+ Number of non-zero integrals:                    149
+ ECORE=   4.76259489603000     
+ Setting normal GetUMatEl routine
+ N_alpha:3 ; N_beta:3 ; LMS:0 ; NEl:6
+ Total momentum           0           0           0
+ Requested momentum           0           0           0
+ Total spin           0 Requested spin           0
+ fDet           1           2           3           4           5           6
+ Fermi det (D0):(    1,    2,    3,    4,    5,    6)
+ Symmetry:  ( 0, 0, 0) 0
+ Fock operator energy:  -22.9351844587000     
+ Setting normal GetUMatEl routine
+ Number of simultaneous walker distributions:            1
+ Number of sign components in bit representation of determinant:            1
+Setting integer length of determinants as bit-strings to:      3
+Setting integer bit-length of determinants as bit-strings to:     64
+ SYMMETRY MULTIPLICATION TABLE
+ No Symmetry table found.
+           1  Symmetry PAIRS
+           1  DISTINCT ORBITAL PAIR PRODUCT SYMS
+ Symmetry and spin of orbitals correctly set up for excitation generators.
+ Simply transferring this into a spin orbital representation.
+ SpinOrbSymLabel: 
+           1           0
+           2           0
+           3           0
+           4           0
+           5           0
+           6           0
+           7           0
+           8           0
+           9           0
+          10           0
+ SymInvLabel: 
+           0           0
+ Not storing the H matrix.
+ <D0|H|D0>=  -14.9795727883482     
+ <D0|T|D0>=  -27.6977793547300     
+ FDet has     3 alpha electrons, and     3 beta electrons.
+                3  alpha-alpha occupied electron pairs
+                3  beta-beta occupied electron pairs
+                9  alpha-beta occupied electron pairs
+                1 alpha-alpha (vacant) hole pairs
+                1 beta-beta (vacant) hole pairs
+                4 alpha-beta (vacant) hole pairs
+ 
+ Performing FCIQMC....
+ 
+ Generated reference determinants:
+(    1,    2,    3,    4,    5,    6) E =    -14.979572788
+Symmetry of reference determinant is:          0
+Symmetry of reference determinant from spin orbital symmetry info is:          0
+*********** INITIATOR METHOD IN USE ***********
+Starting with only the reference determinant in the fixed initiator space.
+Value for seed is:           17
+Reference Energy set to:       -14.9795727883
+Highest energy determinant is (approximately):     -2.07884526395469    
+Corresponding to a correlation energy of:      12.9007275243935    
+ Calculating approximate pDoubles for use with excitation generator by looking a excitations from reference.
+     42 double excitations, and      12 single excitations found from reference. This will be used to calculate pDoubles.
+ pDoubles set to:       0.777778
+ pSingles set to:       0.222222
+Initial Diagonal Shift:         0.1000000000
+ Connectivity of HF determinant is:           54
+Low memory requested for walkers, so increasing memory to 20Mb to avoid memory errors
+Memory allocated for a maximum particle number per node of:         655360
+ Determinant related persistent storage requires:       5.000000 Mb / processor
+Spawning vectors allowing for a total of       100000 particles to be spawned in any one iteration per core.
+Storing walkers in hash-table. Algorithm is now formally linear scaling with walker number
+Length of hash-table:            3500
+Length of hash-table as a fraction of targetwalkers:              0.70000
+Reference processor is:        0
+Initial reference is: (    1,    2,    3,    4,    5,    6)
+  Initialising wavefunctions by the Lanczos algorithm
+  Aborting Lanczos and initialising trial states with direct diagonalisation
+  MAXIMUM WIDTH OF HAMIL :           17
+  TOTAL NUMBER OF NON-ZERO ELEMENTS :          736
+State  1 eigenvalue:  -15.0170039284    
+ Setting ref           1
+(    1,    2,    3,    4,    5,    6)
+Changing projected energy reference determinant for run  1 on the next update cycle to: (    1,    2,    3,    4,    5,    6)
+ Ensuring that Brillouin's theorem is no longer used.
+Reference energy now set to:     -14.9795727883482    
+ Regenerating the stored diagonal HElements for all walkers.
+ Initial memory (without excitgens + temp arrays) consists of :      19.577637 Mb/Processor
+ Only one array of memory to store main particle list allocated...
+ Initial memory allocation sucessful...
+Allocated                400 bytes of shared memory named: rdm_spin_indices
+Allocated                100 bytes of shared memory named: rdm_spatial_indices
+ Explicitly calculating the reduced density matrices from the FCIQMC wavefunction.
+ Calculating the energy from the reduced density matrix. This requires the 2 electron RDM from which the 1-RDM can also be constructed.
+
+ About to allocate rank  2 RDM array, size per MPI process (MB):      0.046341
+ Allocation of rank  2 RDM array complete.
+ About to allocate rank  2 RDM spawning array, size per MPI process (MB):      0.038620
+ Allocation of rank  2 RDM spawning array complete.
+ About to allocate rank  2 RDM receiving arrays, size per MPI process (MB):      0.038620
+ Allocation of rank 
+ Allocation of all multi-body RDM objects complete.
+
+ Main RDM memory arrays consists of:       0.667427 MB per MPI process.
+ RDM memory allocation complete.
+
+
+**** RDMs CALCULATED EXPLICITLY ****
+
+ 1RDM energy contribution  -27.6921610367446     
+ == INFORMATION FOR FINAL 1-RDMS =========================================================
+
+ INFORMATION FOR 1-RDM 1:
+
+ SUM OF 1-RDM(i,i) FOR THE N LOWEST ENERGY HF ORBITALS:      4.8294664354356
+ Writing out the *normalised* 1 electron density matrix to file
+ 
+ Calculating and writing out 1RDM occupations on root process
+ 
+     Natural spatial orbital   Occupation
+               1               1.9999999759
+               2               1.9999996909
+               3               1.6589335393
+               4               0.1705333970
+               5               0.1705333970
+     Sum:                      6.0000000000
+
+ =========================================================================================
+
+ == INFORMATION FOR FINAL 2-RDMS =========================================================
+
+ 2-RDM ESTIMATES FOR STATE 1:
+ Trace of 2-el-RDM before normalisation:  6.7061135028E+04
+ Trace of 2-el-RDM after normalisation:  1.5000000000E+01
+ Zero-body energy contribution:       4.7625948960E+00
+ Energy contribution from the 1-RDM: -2.7692161037E+01
+ Energy contribution from the 2-RDM:  7.9125622123E+00
+ *TOTAL ENERGY* CALCULATED USING THE *REDUCED DENSITY MATRICES*: -1.5017003928448E+01
+
+ Hermiticty error estimates:
+               0        0.00000000000000000000     (Iteration, MAX ABS ERROR IN HERMITICITY)
+               0        0.00000000000000000000     (Iteration, SUM ABS ERROR IN HERMITICITY)
+
+ =========================================================================================
+Non-deallocated shared memory found: _scratch_scratch_mmm0043_work_stochastic_multireference_bagel_interface_test_mrpt_debug_Li2_caspt2_4RDMrdm_spin_indices, 400 bytes
+Non-deallocated shared memory found: _scratch_scratch_mmm0043_work_stochastic_multireference_bagel_interface_test_mrpt_debug_Li2_caspt2_4RDMrdm_spatial_indices, 100 bytes
+
+ ================================================================
+ Memory usage
+ Maximum memory defined is (MB) :   99999.0
+ Maximum memory used is    (MB) :      25.1
+ 
+ Large memory allocations:
+ 
+ Name              Allocated in       Deallocated in         Size
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+ WalkVecDets       InitFCIMCPar       not deallocated      15.0MB
+ arr               init_global_det_datnot deallocated       5.0MB
+ arr               InitFCIMCPar       not deallocated       2.3MB
+ arr               InitFCIMCPar       not deallocated       2.3MB
+ ExcDjs2_rank      Setup_explicit_datanot deallocated     168.8KB
+ ExcDjs_rank       Setup_explicit_datanot deallocated     168.8KB
+ ExcDjs2_rank      Setup_explicit_datanot deallocated     168.8KB
+ ExcDjs_rank       Setup_explicit_datanot deallocated       2.8KB
+ UMat              IntInit            IntCleanup             960B
+ TMAT2D            SetupTMAT          DestroyTMat            800B
+ ================================================================
+
+ ================================================================
+ Timing report.
+
+ Timing of most expensive procedures.
+
+ Procedure                    Calls       CPU    system     total
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+ nElRDMTime                       1      0.93      0.00      0.93
+ NECICUBE                         1      0.52      0.00      0.52
+ FinaliseRDMsTime                 1      0.45      0.00      0.45
+ KRYREF                          30      0.31      0.00      0.31
+ MY_HPSI                        241      0.22      0.00      0.22
+ NECI_RGS                       241      0.19      0.00      0.19
+ NECI_MGS                       241      0.14      0.00      0.14
+ NECI_RSDBLK                    390      0.14      0.00      0.14
+ NECI_OVLAP                     241      0.09      0.00      0.09
+ FRSBLK                           1      0.07      0.00      0.07
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+ Total                                   3.08      0.00      3.08
+
+ Global CPU time          4.83
+ Global system time       0.00
+ Global total time        4.83
+ ================================================================
+ Calculation ended 24/02/2018 at 04:13:05
+ ================================================================
