@@ -1,0 +1,125 @@
+  * process grid (1, 1) will be used
+    node-k98j-023                   
+
+  * using 24 threads per process
+
+  ===============================================================
+    BAGEL - Freshly leavened quantum chemistry                   
+  ===============================================================
+
+  *** Geometry ***
+
+  { "atom" : "Li", "xyz" : [     -0.000000,     -0.000000,     -0.000000 ] },
+  { "atom" : "Li", "xyz" : [      1.889726,     -0.000000,     -0.000000 ] },
+
+  Number of auxiliary basis functions:       28
+
+  Since a DF basis is specified, we compute 2- and 3-index integrals:
+    o Being stored without compression. Storage requirement is 0.000 GB
+       - 3-index ints prep                         0.00
+       - 3-index ints                              0.01
+       - 2-index ints                              0.00
+       - computing inverse                         0.00
+        elapsed time:        0.02 sec.
+
+
+  Number of basis functions:       28
+  Number of electrons      :        6
+
+
+    * METHOD: MOLECULE                             0.04
+
+       - Overlap matrix                            0.00
+       - Hcore matrix                              0.00
+       - Overlap orthog                            0.00
+
+  *** RHF ***
+
+  === Nuclear Repulsion ===
+  
+     4.7625948960
+
+      * DIIS with orbital gradients will be used.
+
+       - SCF startup                               0.03
+
+  === RHF iteration (/home/mmm0043/Programs/bagel_master/src/basis/cc-pvdz.json) ===
+  
+               o Fock build                                  0.00
+      0        -14.97653105          0.00288138           0.00
+               o DIIS                                        0.00
+               o Diag                                        0.00
+               o Post process                                0.00
+               o Fock build                                  0.00
+      1        -14.98032686          0.00072220           0.00
+               o DIIS                                        0.00
+               o Diag                                        0.00
+               o Post process                                0.00
+               o Fock build                                  0.00
+      2        -14.98065716          0.00010340           0.00
+               o DIIS                                        0.00
+               o Diag                                        0.00
+               o Post process                                0.00
+               o Fock build                                  0.00
+      3        -14.98066641          0.00000866           0.00
+               o DIIS                                        0.00
+               o Diag                                        0.00
+               o Post process                                0.00
+               o Fock build                                  0.00
+      4        -14.98066647          0.00000024           0.00
+               o DIIS                                        0.00
+               o Diag                                        0.00
+               o Post process                                0.00
+               o Fock build                                  0.00
+      5        -14.98066647          0.00000008           0.00
+               o DIIS                                        0.00
+               o Diag                                        0.00
+               o Post process                                0.00
+               o Fock build                                  0.00
+      6        -14.98066647          0.00000001           0.00
+  
+    * SCF iteration converged.
+
+    * Permanent dipole moment:
+           (   -0.000000,    -0.000000,     0.000000) a.u.
+
+
+    * METHOD: HF                                   0.05
+
+  ---------------------------
+        FCI calculation      
+  ---------------------------
+
+  Performs exactly the same way as Knowles & Handy 1984 CPL
+
+  o alpha-beta strings
+      length:            20
+  o size of the space 
+      determinant space:  100
+      spin-adapted space: 50
+
+  o single displacement lists (alpha)
+      length:            90
+  o single displacement lists (beta)
+      length:            90
+ Constructing space of all determinants that can formed by removing 1 electron from 3 alpha and 3 beta electrons.
+
+ Space is made up of 4 determinants.
+  o forming links
+    * Integral transformation done. Elapsed time: 0.00
+
+       - jop, kop                                  0.00
+       - denom                                     0.00
+
+Writing integrals to FCIDUMP file
+
+Number of AO basis functions: 28
+Number of MO basis functions to dump: 28
+Writing 2e integral block 
+Writing 1e integral block 
+  -- Termination requested --
+  message: MO integrals are dumped on a file.
+
+  
+  ===============================================================
+
