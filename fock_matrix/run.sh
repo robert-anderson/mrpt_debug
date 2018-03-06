@@ -198,7 +198,7 @@ $bagel_exe bagel.json > bagel.canonical.out
 cat > bagel.json <<- EOM
 {
     "bagel": [
-		$mol_chunk
+        $mol_chunk
         {
             "nstate": [
                 1
@@ -206,17 +206,17 @@ cat > bagel.json <<- EOM
             "nclosed": $nclosed,
             "title": "casscf",
             "maxiter_micro": 100,
-	        "algorithm" : "noopt",
+            "algorithm" : "noopt",
             "nact": $nact,
-			"external_rdm" : "fciqmc",
+            "external_rdm" : "fciqmc",
             "maxiter": 1
         },
         {
             "title" : "smith",
-			"method" : "caspt2",
-  			"external_rdm" : "noref",
-  			"frozen" : false
-		}
+            "method" : "caspt2",
+            "external_rdm" : "noref",
+            "frozen" : false
+        }
     ]
 }
 EOM
