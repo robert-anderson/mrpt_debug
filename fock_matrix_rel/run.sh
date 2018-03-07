@@ -3,7 +3,7 @@
 root_dir=$(pwd)/$(dirname $0)
 
 bagel_exe='/home/mmm0043/Programs/bagel_master/obj/src/BAGEL'
-neci_exe='/home/mmm0043/Programs/neci_hbrdm/build_debug/bin/neci'
+neci_exe='/home/mmm0043/Programs/neci_hbrdm/build_debug/bin/kneci'
 
 nclosed=0
 nact=5
@@ -43,25 +43,28 @@ EOM
 for i in $(ls | grep -v 'run.sh'); do rm $i; done
 
 
-# do HF and dump integrals
+# do DHF and dump integrals
 cat > bagel.json <<- EOM
 {
-    "bagel": [
+    "bagel" : [
 		$mol_chunk
         {
-            "title": "hf"
+            "title" : "dhf",
+            "gaunt" : true,
+            "breit" : true,
+            "robust" : true,
+            "thresh" : 1.0e-10,
+            "maxiter" : 1000
         },
         {
-            "only_ints": true,
-            "title": "fci",
-            "frozen": false,
-            "ncore": $nclosed,
-            "norb": $nact,
-            "state": [
-                1
-            ]
+          "title" : "zfci",
+          "only_ints" : true,
+          "ncore" : $nclosed,
+          "norb" :  $nact,
+          "frozen" : false,
+          "state" : [1]
         }
-    ]
+	]
 }
 EOM
 $bagel_exe bagel.json > bagel.initial.out
@@ -77,9 +80,8 @@ symignoreenergies
 freeformat
 electrons $nelec
 
-spin-restrict 0
 sym 0 0 0 0
-nonuniformrandexcits 4IND-WEIGHTED
+nonuniformrandexcits PICK-VIRT-UNIFORM
 nobrillouintheorem
 endsys
 
@@ -121,7 +123,6 @@ explicitallrdm
 
 calcrdmonfly 3 1000 5000
     
-write-spin-free-rdm
 printonerdm
 print-one-rdm-occupations
 endlog
@@ -130,35 +131,32 @@ EOM
 
 $neci_exe neci.inp > neci.initial.out
 rm RDMEstimates INITIATORStats FCIMCStats 2RDM_POPSFILE
-mv spinfree_TwoRDM.1 fciqmc_0_0.rdm2
-mv spinfree_OneRDM.1 fciqmc_0_0.rdm1
+mv 2RDM.1 fciqmc_0_0.rdm2
+mv 1RDM.1 fciqmc_0_0.rdm1
 
 rm bagel.json
-# do casscf with no optimisation
+# do zcasscf with no optimisation
 cat > bagel.json <<- EOM
 {
     "bagel": [
 		$mol_chunk
         {
-            "nstate": [
-                1
-            ],
             "nclosed": $nclosed,
-            "title": "casscf",
-            "maxiter_micro": 100,
+            "title": "zcasscf",
             "algorithm":"noopt",
             "nact": $nact,
             "external_rdm" : "fciqmc",
+		    "state" : [1],
             "maxiter": 1
         },
-        {
-            "only_ints": true,
-            "nstate": 1,
-            "title": "fci",
-            "frozen": false,
+		{
+            "title" : "zfci",
+            "only_ints" : true,
             "ncore": $nclosed,
-            "norb": $nact
-        }
+            "norb": $nact,
+            "frozen" : false,
+            "state" : [1]
+		}
     ]
 }
 EOM
@@ -171,25 +169,22 @@ cat > bagel.json <<- EOM
     "bagel": [
 		$mol_chunk
         {
-            "nstate": [
-                1
-            ],
             "nclosed": $nclosed,
-            "title": "casscf",
-            "maxiter_micro": 100,
+            "title": "zcasscf",
             "canonical":true,
             "nact": $nact,
             "external_rdm" : "fciqmc",
+		    "state" : [1],
             "maxiter": 1
         },
-        {
-            "only_ints": true,
-            "nstate": 1,
-            "title": "fci",
-            "frozen": false,
+		{
+            "title" : "zfci",
+            "only_ints" : true,
             "ncore": $nclosed,
-            "norb": $nact
-        }
+            "norb": $nact,
+            "frozen" : false,
+            "state" : [1]
+		}
     ]
 }
 EOM
@@ -198,23 +193,22 @@ $bagel_exe bagel.json > bagel.canonical.out
 
 # dumping FOCKMAT in semi-canonical orbital basis
 cat > bagel.json <<- EOM
+
+
 {
     "bagel": [
-        $mol_chunk
+		$mol_chunk
         {
-            "nstate": [
-                1
-            ],
             "nclosed": $nclosed,
-            "title": "casscf",
-            "maxiter_micro": 100,
-            "algorithm" : "noopt",
+            "title": "zcasscf",
+            "algorithm":"noopt",
             "nact": $nact,
             "external_rdm" : "fciqmc",
+		    "state" : [1],
             "maxiter": 1
         },
         {
-            "title" : "smith",
+            "title" : "relsmith",
             "method" : "caspt2",
             "external_rdm" : "noref",
             "frozen" : false
@@ -224,8 +218,8 @@ cat > bagel.json <<- EOM
 EOM
 
 $bagel_exe bagel.json > bagel.fockdump.out
-
 cp FOCKMAT FOCKMAT_BAGEL
 python $root_dir/../scripts/reformat_fockmat.py
+
 
 

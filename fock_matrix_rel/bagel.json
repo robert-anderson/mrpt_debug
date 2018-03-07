@@ -1,6 +1,8 @@
+
+
 {
     "bagel": [
-        {
+{
             "geometry": [
                 {
                     "xyz": [
@@ -25,19 +27,16 @@
             "title": "molecule"
         },
         {
-            "nstate": [
-                1
-            ],
             "nclosed": 0,
-            "title": "casscf",
-            "maxiter_micro": 100,
-            "algorithm" : "noopt",
+            "title": "zcasscf",
+            "algorithm":"noopt",
             "nact": 5,
             "external_rdm" : "fciqmc",
+    "state" : [1],
             "maxiter": 1
         },
         {
-            "title" : "smith",
+            "title" : "relsmith",
             "method" : "caspt2",
             "external_rdm" : "noref",
             "frozen" : false

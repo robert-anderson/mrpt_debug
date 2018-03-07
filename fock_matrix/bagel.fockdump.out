@@ -1,5 +1,5 @@
   * process grid (1, 1) will be used
-    node-k98j-023                   
+    node-k98p-035                   
 
   * using 24 threads per process
 
@@ -19,15 +19,15 @@
        - 3-index ints prep                         0.00
        - 3-index ints                              0.01
        - 2-index ints                              0.00
-       - computing inverse                         0.00
-        elapsed time:        0.01 sec.
+       - computing inverse                         0.01
+        elapsed time:        0.02 sec.
 
 
   Number of basis functions:       28
   Number of electrons      :        6
 
 
-    * METHOD: MOLECULE                             0.03
+    * METHOD: MOLECULE                             0.04
 
        - 3-index ints prep                         0.00
        - 3-index ints                              0.00

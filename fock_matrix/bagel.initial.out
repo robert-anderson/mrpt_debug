@@ -1,5 +1,5 @@
   * process grid (1, 1) will be used
-    node-k98j-023                   
+    node-k98p-035                   
 
   * using 24 threads per process
 
@@ -84,7 +84,7 @@
            (   -0.000000,    -0.000000,     0.000000) a.u.
 
 
-    * METHOD: HF                                   0.05
+    * METHOD: HF                                   0.06
 
   ---------------------------
         FCI calculation      

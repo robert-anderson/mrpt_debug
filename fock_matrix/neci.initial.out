@@ -10,9 +10,9 @@
  VCS BASE repository version:
      215945f6db3c086445683e122cc2ab4205e0652a
  Working directory: 
-     /scratch/scratch/mmm0043/work/stochastic_multireference/bagel/interface_test/mrpt_debug/Li2_casci_caspt2
- Running on: node-k98j-023
- Started running on 06/03/2018 at 15:25:08
+     /scratch/scratch/mmm0043/work/stochastic_multireference/bagel/interface_test/mrpt_debug/fock_matrix
+ Running on: node-k98p-035
+ Started running on 07/03/2018 at 02:38:18
  ================================================================
 
  Processing arguments
@@ -121,7 +121,7 @@ Two-electron integrals with a magnitude over    0.1000000E-07 are screened
  N_alpha:3 ; N_beta:3 ; LMS:0 ; NEl:6
  Fermi det (D0):(    1,    2,    3,    4,    5,    6)
  Symmetry:  ( 0, 0, 0) 0
- Fock operator energy:  -22.9159324677466     
+ Fock operator energy:  -22.9159324677467     
  Setting normal GetUMatEl routine
  Number of simultaneous walker distributions:            1
  Number of sign components in bit representation of determinant:            1
@@ -135,7 +135,7 @@ Setting integer bit-length of determinants as bit-strings to:     64
  Simply transferring this into a spin orbital representation.
  Not storing the H matrix.
  <D0|H|D0>=  -14.9806664683807     
- <D0|T|D0>=  -27.6785273637766     
+ <D0|T|D0>=  -27.6785273637767     
  FDet has     3 alpha electrons, and     3 beta electrons.
                 3  alpha-alpha occupied electron pairs
                 3  beta-beta occupied electron pairs
@@ -154,7 +154,7 @@ Symmetry of reference determinant from spin orbital symmetry info is:          0
 Starting with only the reference determinant in the fixed initiator space.
 Value for seed is:           17
 Reference Energy set to:       -14.9806664684
-Highest energy determinant is (approximately):     -1.29115002067936    
+Highest energy determinant is (approximately):     -1.29115002067933    
 Corresponding to a correlation energy of:      13.6895164477013    
  Calculating approximate pDoubles for use with excitation generator by looking a excitations from reference.
      42 double excitations, and      12 single excitations found from reference. This will be used to calculate pDoubles.
@@ -204,7 +204,7 @@ Allocated                100 bytes of shared memory named: rdm_spatial_indices
 
 **** RDMs CALCULATED EXPLICITLY ****
 
- 1RDM energy contribution  -27.6134714953317     
+ 1RDM energy contribution  -27.6134714953318     
  == INFORMATION FOR FINAL 1-RDMS =========================================================
 
  INFORMATION FOR 1-RDM 1:
@@ -239,8 +239,8 @@ Allocated                100 bytes of shared memory named: rdm_spatial_indices
                0        0.00000000000000000000     (Iteration, SUM ABS ERROR IN HERMITICITY)
 
  =========================================================================================
-Non-deallocated shared memory found: _scratch_scratch_mmm0043_work_stochastic_multireference_bagel_interface_test_mrpt_debug_Li2_casci_caspt2rdm_spin_indices, 400 bytes
-Non-deallocated shared memory found: _scratch_scratch_mmm0043_work_stochastic_multireference_bagel_interface_test_mrpt_debug_Li2_casci_caspt2rdm_spatial_indices, 100 bytes
+Non-deallocated shared memory found: _scratch_scratch_mmm0043_work_stochastic_multireference_bagel_interface_test_mrpt_debug_fock_matrixrdm_spin_indices, 400 bytes
+Non-deallocated shared memory found: _scratch_scratch_mmm0043_work_stochastic_multireference_bagel_interface_test_mrpt_debug_fock_matrixrdm_spatial_indices, 100 bytes
 
  ================================================================
  Memory usage
@@ -270,22 +270,22 @@ Non-deallocated shared memory found: _scratch_scratch_mmm0043_work_stochastic_mu
 
  Procedure                    Calls       CPU    system     total
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+ NECICUBE                         1      0.35      0.00      0.35
  FinaliseRDMsTime                 1      0.31      0.00      0.31
- NECICUBE                         1      0.29      0.00      0.29
- KRYREF                          24      0.23      0.00      0.23
- NECI_RGS                       193      0.23      0.00      0.23
+ KRYREF                          24      0.22      0.00      0.22
+ NECI_RGS                       193      0.21      0.00      0.21
  nElRDMTime                       1      0.15      0.00      0.15
  NECI_MGS                       193      0.12      0.00      0.12
- NECI_RSDBLK                    312      0.09      0.00      0.09
- MY_HPSI                        193      0.06      0.00      0.06
- FRSBLK                           1      0.06      0.00      0.06
+ NECI_RSDBLK                    312      0.12      0.00      0.12
+ MY_HPSI                        193      0.07      0.00      0.07
  NECI_OVLAP                     193      0.06      0.00      0.06
+ FRSBLK                           1      0.06      0.00      0.06
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
- Total                                   1.59      0.00      1.59
+ Total                                   1.66      0.00      1.66
 
- Global CPU time          2.53
+ Global CPU time          2.63
  Global system time       0.00
- Global total time        2.53
+ Global total time        2.63
  ================================================================
- Calculation ended 06/03/2018 at 15:25:08
+ Calculation ended 07/03/2018 at 02:38:18
  ================================================================
