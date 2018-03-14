@@ -1,5 +1,5 @@
   * process grid (1, 1) will be used
-    node-k98p-035                   
+    node-k98c-013                   
 
   * using 24 threads per process
 
@@ -32,13 +32,13 @@
   *** Geometry (Relativistic) ***
        - 3-index ints post                         0.00
        - 3-index ints prep                         0.00
-       - 3-index ints                              0.12
+       - 3-index ints                              0.10
        - 3-index ints post                         0.00
        - 3-index ints prep                         0.00
        - 3-index ints                              0.00
        - 3-index ints post                         0.00
 
-       - Geometry relativistic (total)             0.13
+       - Geometry relativistic (total)             0.10
 
   *** Dirac HF ***
 
@@ -54,142 +54,181 @@
   === Dirac RHF iteration (/home/mmm0043/Programs/bagel_master/src/basis/cc-pvdz.json, RKB) ===
   
        - Coulomb: half trans                       0.00
-       - Coulomb: metric multiply                  0.05
+       - Coulomb: metric multiply                  0.03
        - Coulomb: J operator                       0.00
        - Coulomb: K operator                       0.01
        - Gaunt: half trans                         0.00
-       - Gaunt: metric multiply                    0.03
-       - Breit: 2-index multiplied                 0.18
+       - Gaunt: metric multiply                    0.02
+       - Breit: 2-index multiplied                 0.11
        - Gaunt: J operator                         0.00
        - Gaunt: K operator                         0.02
-               o Fock build                                  0.31
-      0        -13.77304185          0.00582744           0.31
+               o Fock build                                  0.20
+      0        -13.77304185          0.00582744           0.20
        - Coulomb: half trans                       0.00
-       - Coulomb: metric multiply                  0.05
+       - Coulomb: metric multiply                  0.03
        - Coulomb: J operator                       0.00
        - Coulomb: K operator                       0.01
        - Gaunt: half trans                         0.00
-       - Gaunt: metric multiply                    0.03
-       - Breit: 2-index multiplied                 0.18
+       - Gaunt: metric multiply                    0.02
+       - Breit: 2-index multiplied                 0.11
        - Gaunt: J operator                         0.00
        - Gaunt: K operator                         0.02
-               o Fock build                                  0.30
-      1        -14.94472306          0.00094448           0.31
+               o Fock build                                  0.19
+      1        -14.94472306          0.00094448           0.20
                o DIIS                                        0.00
        - Coulomb: half trans                       0.00
-       - Coulomb: metric multiply                  0.05
+       - Coulomb: metric multiply                  0.03
        - Coulomb: J operator                       0.00
        - Coulomb: K operator                       0.01
        - Gaunt: half trans                         0.00
-       - Gaunt: metric multiply                    0.03
-       - Breit: 2-index multiplied                 0.19
+       - Gaunt: metric multiply                    0.02
+       - Breit: 2-index multiplied                 0.11
        - Gaunt: J operator                         0.00
        - Gaunt: K operator                         0.02
-               o Fock build                                  0.31
-      2        -14.97900132          0.00033595           0.32
+               o Fock build                                  0.19
+      2        -14.97900132          0.00033595           0.20
                o DIIS                                        0.00
        - Coulomb: half trans                       0.00
-       - Coulomb: metric multiply                  0.05
+       - Coulomb: metric multiply                  0.03
        - Coulomb: J operator                       0.00
        - Coulomb: K operator                       0.01
        - Gaunt: half trans                         0.00
-       - Gaunt: metric multiply                    0.03
-       - Breit: 2-index multiplied                 0.19
+       - Gaunt: metric multiply                    0.02
+       - Breit: 2-index multiplied                 0.11
        - Gaunt: J operator                         0.00
        - Gaunt: K operator                         0.02
-               o Fock build                                  0.31
-      3        -14.98243754          0.00006718           0.32
+               o Fock build                                  0.20
+      3        -14.98243754          0.00006718           0.20
                o DIIS                                        0.00
        - Coulomb: half trans                       0.00
-       - Coulomb: metric multiply                  0.05
+       - Coulomb: metric multiply                  0.03
        - Coulomb: J operator                       0.00
        - Coulomb: K operator                       0.01
        - Gaunt: half trans                         0.00
-       - Gaunt: metric multiply                    0.03
-       - Breit: 2-index multiplied                 0.19
+       - Gaunt: metric multiply                    0.02
+       - Breit: 2-index multiplied                 0.11
        - Gaunt: J operator                         0.00
        - Gaunt: K operator                         0.02
-               o Fock build                                  0.31
-      4        -14.98247917          0.00000349           0.31
+               o Fock build                                  0.20
+      4        -14.98247917          0.00000349           0.21
                o DIIS                                        0.00
        - Coulomb: half trans                       0.00
-       - Coulomb: metric multiply                  0.05
+       - Coulomb: metric multiply                  0.03
        - Coulomb: J operator                       0.00
        - Coulomb: K operator                       0.01
        - Gaunt: half trans                         0.00
-       - Gaunt: metric multiply                    0.03
-       - Breit: 2-index multiplied                 0.19
+       - Gaunt: metric multiply                    0.02
+       - Breit: 2-index multiplied                 0.11
        - Gaunt: J operator                         0.00
        - Gaunt: K operator                         0.02
-               o Fock build                                  0.31
-      5        -14.98247936          0.00000091           0.31
+               o Fock build                                  0.20
+      5        -14.98247936          0.00000091           0.21
                o DIIS                                        0.00
        - Coulomb: half trans                       0.00
-       - Coulomb: metric multiply                  0.05
+       - Coulomb: metric multiply                  0.03
        - Coulomb: J operator                       0.00
        - Coulomb: K operator                       0.01
        - Gaunt: half trans                         0.00
-       - Gaunt: metric multiply                    0.03
-       - Breit: 2-index multiplied                 0.18
+       - Gaunt: metric multiply                    0.02
+       - Breit: 2-index multiplied                 0.11
        - Gaunt: J operator                         0.00
-       - Gaunt: K operator                         0.02
-               o Fock build                                  0.30
-      6        -14.98247938          0.00000011           0.31
+       - Gaunt: K operator                         0.05
+               o Fock build                                  0.23
+      6        -14.98247938          0.00000011           0.23
                o DIIS                                        0.00
        - Coulomb: half trans                       0.00
-       - Coulomb: metric multiply                  0.05
+       - Coulomb: metric multiply                  0.03
        - Coulomb: J operator                       0.00
        - Coulomb: K operator                       0.01
        - Gaunt: half trans                         0.00
-       - Gaunt: metric multiply                    0.03
-       - Breit: 2-index multiplied                 0.18
+       - Gaunt: metric multiply                    0.02
+       - Breit: 2-index multiplied                 0.11
        - Gaunt: J operator                         0.00
        - Gaunt: K operator                         0.02
-               o Fock build                                  0.31
-      7        -14.98247938          0.00000000           0.31
+               o Fock build                                  0.19
+      7        -14.98247938          0.00000000           0.20
                o DIIS                                        0.00
        - Coulomb: half trans                       0.00
-       - Coulomb: metric multiply                  0.05
+       - Coulomb: metric multiply                  0.03
        - Coulomb: J operator                       0.00
        - Coulomb: K operator                       0.01
        - Gaunt: half trans                         0.00
-       - Gaunt: metric multiply                    0.03
-       - Breit: 2-index multiplied                 0.18
+       - Gaunt: metric multiply                    0.02
+       - Breit: 2-index multiplied                 0.11
        - Gaunt: J operator                         0.00
        - Gaunt: K operator                         0.02
-               o Fock build                                  0.30
-      8        -14.98247938          0.00000000           0.31
+               o Fock build                                  0.19
+      8        -14.98247938          0.00000000           0.19
                o DIIS                                        0.00
        - Coulomb: half trans                       0.00
-       - Coulomb: metric multiply                  0.05
+       - Coulomb: metric multiply                  0.03
        - Coulomb: J operator                       0.00
        - Coulomb: K operator                       0.01
        - Gaunt: half trans                         0.00
-       - Gaunt: metric multiply                    0.03
-       - Breit: 2-index multiplied                 0.19
+       - Gaunt: metric multiply                    0.02
+       - Breit: 2-index multiplied                 0.11
        - Gaunt: J operator                         0.00
        - Gaunt: K operator                         0.02
-               o Fock build                                  0.31
-      9        -14.98247938          0.00000000           0.32
+               o Fock build                                  0.19
+      9        -14.98247938          0.00000000           0.19
                o DIIS                                        0.00
        - Coulomb: half trans                       0.00
-       - Coulomb: metric multiply                  0.05
+       - Coulomb: metric multiply                  0.03
        - Coulomb: J operator                       0.00
        - Coulomb: K operator                       0.01
        - Gaunt: half trans                         0.00
-       - Gaunt: metric multiply                    0.03
-       - Breit: 2-index multiplied                 0.19
+       - Gaunt: metric multiply                    0.02
+       - Breit: 2-index multiplied                 0.11
        - Gaunt: J operator                         0.00
        - Gaunt: K operator                         0.02
-               o Fock build                                  0.30
-     10        -14.98247938          0.00000000           0.31
+               o Fock build                                  0.19
+     10        -14.98247938          0.00000000           0.19
   
     * SCF iteration converged.
 
     * Permanent dipole moment: Dirac Hartree-Fock
-           (   -0.000000,     0.000000,    -0.000000) a.u.
+           (    0.000000,    -0.000000,    -0.000000) a.u.
 
-    * METHOD: DHF                                  3.57
+    * METHOD: DHF                                  2.34
+
+  ---------------------------
+      CASSCF calculation     
+  ---------------------------
+
+  *** Geometry (Relativistic) ***
+       - 3-index ints post                         0.00
+       - 3-index ints prep                         0.00
+       - 3-index ints                              0.00
+       - 3-index ints post                         0.00
+       - 3-index ints prep                         0.00
+       - 3-index ints                              0.00
+       - 3-index ints post                         0.00
+
+       - Geometry relativistic (total)             0.01
+
+    * nclosed  :      0
+    * nact     :      5
+    * nvirt    :     51
+    * gaunt    : true
+    * breit    : true
+    * active space: 6 electrons in 5 orbitals
+       - Coulomb: half trans                       0.00
+       - Coulomb: metric multiply                  0.03
+       - Coulomb: J operator                       0.00
+       - Coulomb: K operator                       0.01
+       - Gaunt: half trans                         0.00
+       - Gaunt: metric multiply                    0.02
+       - Breit: 2-index multiplied                 0.11
+       - Gaunt: J operator                         0.00
+       - Gaunt: K operator                         0.02
+    * nstate   :      1
+
+  === Dirac CASSCF iteration (/home/mmm0043/Programs/bagel_master/src/basis/cc-pvdz.json) ===
+
+   * Using the second-order algorithm
+
+
+    * METHOD: ZCASSCF                              0.83
 
   ------------------------------
   Spin-nonconserving complex FCI
@@ -207,15 +246,15 @@
   *** Geometry (Relativistic) ***
        - 3-index ints post                         0.00
        - 3-index ints prep                         0.00
-       - 3-index ints                              0.03
+       - 3-index ints                              0.04
        - 3-index ints post                         0.00
        - 3-index ints prep                         0.00
        - 3-index ints                              0.00
        - 3-index ints post                         0.00
 
-       - Geometry relativistic (total)             0.03
+       - Geometry relativistic (total)             0.05
 
-    * Integral transformation done. Elapsed time: 0.91
+    * Integral transformation done. Elapsed time: 0.50
 
        - jop, kop                                  0.00
        - denom                                     0.00

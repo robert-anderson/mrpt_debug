@@ -19,15 +19,15 @@
        - 3-index ints prep                         0.00
        - 3-index ints                              0.01
        - 2-index ints                              0.00
-       - computing inverse                         0.01
-        elapsed time:        0.02 sec.
+       - computing inverse                         0.00
+        elapsed time:        0.01 sec.
 
 
   Number of basis functions:       28
   Number of electrons      :        6
 
 
-    * METHOD: MOLECULE                             0.04
+    * METHOD: MOLECULE                             0.03
 
        - 3-index ints prep                         0.00
        - 3-index ints                              0.00
@@ -45,11 +45,14 @@
 
     * Using the second-order algorithm
 
-      0  0         0.00000000     6.13e-10      0.01
+      0  0         0.00000000     1.70e-07      0.00
 
-    * Second-order optimization converged. *   
+         res : 2.61e-07   lamb: 1.00e+00   eps : -3.73e-12   step: 3.11e-06    0.00
+         res : 2.88e-08   lamb: 1.00e+00   eps : -3.81e-12   step: 2.92e-06    0.00
+         res : 2.34e-09   lamb: 1.00e+00   eps : -3.81e-12   step: 2.93e-06    0.00
 
- DOING CANON 
+    * Max iteration reached during the second-order optimization.  Convergence not reached! *   
+
 
     * METHOD: CASSCF                               0.02
 

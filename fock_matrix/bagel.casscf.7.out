@@ -19,7 +19,7 @@
        - 3-index ints prep                         0.00
        - 3-index ints                              0.01
        - 2-index ints                              0.00
-       - computing inverse                         0.01
+       - computing inverse                         0.00
         elapsed time:        0.02 sec.
 
 
@@ -45,11 +45,10 @@
 
     * Using the second-order algorithm
 
-      0  0         0.00000000     6.13e-10      0.01
+      0  0         0.00000000     4.84e-10      0.01
 
     * Second-order optimization converged. *   
 
- DOING CANON 
 
     * METHOD: CASSCF                               0.02
 

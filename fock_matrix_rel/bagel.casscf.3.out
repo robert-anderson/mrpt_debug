@@ -20,14 +20,14 @@
        - 3-index ints                              0.01
        - 2-index ints                              0.00
        - computing inverse                         0.00
-        elapsed time:        0.02 sec.
+        elapsed time:        0.01 sec.
 
 
   Number of basis functions:       28
   Number of electrons      :        6
 
 
-    * METHOD: MOLECULE                             0.04
+    * METHOD: MOLECULE                             0.03
 
        - 3-index ints prep                         0.00
        - 3-index ints                              0.00
@@ -35,7 +35,7 @@
        - computing inverse                         0.00
        - 3-index ints post                         0.00
        - 3-index ints prep                         0.00
-       - 3-index ints                              0.10
+       - 3-index ints                              0.07
        - 3-index ints post                         0.00
        - 3-index ints prep                         0.00
        - 3-index ints                              0.00
@@ -47,13 +47,13 @@
   *** Geometry (Relativistic) ***
        - 3-index ints post                         0.00
        - 3-index ints prep                         0.00
-       - 3-index ints                              0.03
+       - 3-index ints                              0.00
        - 3-index ints post                         0.00
        - 3-index ints prep                         0.00
        - 3-index ints                              0.00
        - 3-index ints post                         0.00
 
-       - Geometry relativistic (total)             0.03
+       - Geometry relativistic (total)             0.01
 
     * nclosed  :      0
     * nact     :      5
@@ -67,23 +67,18 @@
 
    * Using the second-order algorithm
 
-         0   0          0.00000000     2.26e-09      0.62
+         0   0          0.00000000     3.08e-05      0.56
 
-    * Second-order optimization converged. *   
+         res : 4.12e-04   lamb: 1.00e+00   eps : -1.31e-05   step: 1.60e-02    0.01
+         res : 4.69e-05   lamb: 1.00e+00   eps : -1.35e-05   step: 1.63e-02    0.01
+         res : 1.65e-05   lamb: 1.00e+00   eps : -1.35e-05   step: 1.63e-02    0.01
+         res : 3.13e-06   lamb: 1.00e+00   eps : -1.35e-05   step: 1.63e-02    0.01
+         res : 3.81e-07   lamb: 1.00e+00   eps : -1.35e-05   step: 1.63e-02    0.01
 
-       - Coulomb: half trans                       0.00
-       - Coulomb: metric multiply                  0.03
-       - Coulomb: J operator                       0.00
-       - Coulomb: K operator                       0.01
-       - Gaunt: half trans                         0.00
-       - Gaunt: metric multiply                    0.02
-       - Breit: 2-index multiplied                 0.12
-       - Gaunt: J operator                         0.01
-       - Gaunt: K operator                         0.02
-   DOING ZCANON
+    * Max iteration reached during the second-order optimization.  Convergence not reached! *   
 
 
-    * METHOD: ZCASSCF                              1.60
+    * METHOD: ZCASSCF                              1.40
 
   ------------------------------
   Spin-nonconserving complex FCI
@@ -101,15 +96,15 @@
   *** Geometry (Relativistic) ***
        - 3-index ints post                         0.00
        - 3-index ints prep                         0.00
-       - 3-index ints                              0.01
+       - 3-index ints                              0.04
        - 3-index ints post                         0.00
        - 3-index ints prep                         0.00
        - 3-index ints                              0.00
        - 3-index ints post                         0.00
 
-       - Geometry relativistic (total)             0.01
+       - Geometry relativistic (total)             0.04
 
-    * Integral transformation done. Elapsed time: 0.54
+    * Integral transformation done. Elapsed time: 0.52
 
        - jop, kop                                  0.00
        - denom                                     0.00

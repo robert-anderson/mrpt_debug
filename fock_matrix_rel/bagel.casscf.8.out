@@ -20,7 +20,7 @@
        - 3-index ints                              0.01
        - 2-index ints                              0.00
        - computing inverse                         0.00
-        elapsed time:        0.02 sec.
+        elapsed time:        0.01 sec.
 
 
   Number of basis functions:       28
@@ -35,7 +35,7 @@
        - computing inverse                         0.00
        - 3-index ints post                         0.00
        - 3-index ints prep                         0.00
-       - 3-index ints                              0.12
+       - 3-index ints                              0.07
        - 3-index ints post                         0.00
        - 3-index ints prep                         0.00
        - 3-index ints                              0.00
@@ -47,13 +47,13 @@
   *** Geometry (Relativistic) ***
        - 3-index ints post                         0.00
        - 3-index ints prep                         0.00
-       - 3-index ints                              0.03
+       - 3-index ints                              0.07
        - 3-index ints post                         0.00
        - 3-index ints prep                         0.00
        - 3-index ints                              0.00
        - 3-index ints post                         0.00
 
-       - Geometry relativistic (total)             0.04
+       - Geometry relativistic (total)             0.07
 
     * nclosed  :      0
     * nact     :      5
@@ -61,70 +61,68 @@
     * gaunt    : true
     * breit    : true
     * active space: 6 electrons in 5 orbitals
-       - Coulomb: half trans                       0.00
-       - Coulomb: metric multiply                  0.03
-       - Coulomb: J operator                       0.00
-       - Coulomb: K operator                       0.01
-       - Gaunt: half trans                         0.00
-       - Gaunt: metric multiply                    0.02
-       - Breit: 2-index multiplied                 0.11
-       - Gaunt: J operator                         0.00
-       - Gaunt: K operator                         0.02
     * nstate   :      1
 
   === Dirac CASSCF iteration (/home/mmm0043/Programs/bagel_master/src/basis/cc-pvdz.json) ===
 
-    * No orbital optimization will be performed!
+   * Using the second-order algorithm
+
+         0   0          0.00000000     1.69e-09      0.58
+
+    * Second-order optimization converged. *   
 
 
-    * METHOD: ZCASSCF                              0.94
+    * METHOD: ZCASSCF                              1.36
 
-  === SMITH program ===
+  ------------------------------
+  Spin-nonconserving complex FCI
+  ------------------------------
 
-       - Coulomb: half trans                       0.00
-       - Coulomb: metric multiply                  0.03
-       - Coulomb: J operator                       0.00
-       - Coulomb: K operator                       0.01
-       - Gaunt: half trans                         0.00
-       - Gaunt: metric multiply                    0.02
-       - Breit: 2-index multiplied                 0.11
-       - Gaunt: J operator                         0.00
-       - Gaunt: K operator                         0.02
-       - Coulomb: half trans                       0.00
-       - Coulomb: metric multiply                  0.03
-       - Coulomb: K operator                       0.01
-       - Gaunt: half trans                         0.00
-       - Gaunt: metric multiply                    0.02
-       - Breit: 2-index multiplied                 0.11
-       - Gaunt: K operator                         0.02
+    * nstate   :      1
+    * nclosed  :      0
+    * nact     :      5
+    * nvirt    :     23
 
-  Virtual orbital energies: 
-    23        0.0257
-    22        0.0733
-    21        0.0736
-    20        0.0826
-    19        0.0826
-    18        0.0901
-    17        0.0901
-    16        0.1385
-    15        0.2533
-    14        0.2729
-    13        0.2995
-    12        0.2995
-    11        0.3171
-    10        0.3171
-    9        0.4498
-    8        0.4498
-    7        0.4620
-    6        0.4874
-    5        0.4874
-    4        0.9813
-    3        1.2488
-    2        1.2489
-    1        2.3358
+    * Relativistic FCI
+    * 6 active electrons in 5 orbitals.
+    * gaunt    : true
+    * breit    : true
+  *** Geometry (Relativistic) ***
+       - 3-index ints post                         0.00
+       - 3-index ints prep                         0.00
+       - 3-index ints                              0.00
+       - 3-index ints post                         0.00
+       - 3-index ints prep                         0.00
+       - 3-index ints                              0.00
+       - 3-index ints post                         0.00
 
+       - Geometry relativistic (total)             0.01
+
+    * Integral transformation done. Elapsed time: 0.78
+
+       - jop, kop                                  0.00
+       - denom                                     0.00
+
+Writing relativistic integrals to FCIDUMP.REL file
+
+Number of AO basis functions: 112
+Number of MO basis functions to dump: 56
+Writing 2e integral block 1 / 16 : ( + + | + + )
+Writing 2e integral block 3 / 16 : ( + - | + + )
+Writing 2e integral block 4 / 16 : ( + - | + - )
+Writing 2e integral block 5 / 16 : ( + + | - + )
+Writing 2e integral block 6 / 16 : ( + + | - - )
+Writing 2e integral block 10 / 16 : ( - + | + - )
+Writing 2e integral block 12 / 16 : ( - - | + - )
+Writing 2e integral block 13 / 16 : ( - + | - + )
+Writing 2e integral block 14 / 16 : ( - + | - - )
+Writing 2e integral block 16 / 16 : ( - - | - - )
+Writing 1e integral block 1 / 4
+Writing 1e integral block 2 / 4
+Writing 1e integral block 3 / 4
+Writing 1e integral block 4 / 4
   -- Termination requested --
-  message: Fock matrix has been dumped in FOCKMAT
+  message: Relativistic MO integrals are dumped on a file.
 
   
   ===============================================================

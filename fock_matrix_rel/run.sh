@@ -57,6 +57,14 @@ cat > bagel.json <<- EOM
             "maxiter" : 1000
         },
         {
+            "nclosed": $nclosed,
+            "title": "zcasscf",
+            "nact": $nact,
+            "external_rdm" : "noref",
+		    "state" : [1],
+            "maxiter": 0
+        },
+        {
           "title" : "zfci",
           "only_ints" : true,
           "ncore" : $nclosed,
@@ -129,13 +137,8 @@ endlog
 end
 EOM
 
-$neci_exe neci.inp > neci.initial.out
-rm RDMEstimates INITIATORStats FCIMCStats 2RDM_POPSFILE
-mv 2RDM.1 fciqmc_0_0.rdm2
-mv 1RDM.1 fciqmc_0_0.rdm1
-
 rm bagel.json
-# do zcasscf with no optimisation
+# do zcasscf
 cat > bagel.json <<- EOM
 {
     "bagel": [
@@ -143,7 +146,6 @@ cat > bagel.json <<- EOM
         {
             "nclosed": $nclosed,
             "title": "zcasscf",
-            "algorithm":"noopt",
             "nact": $nact,
             "external_rdm" : "fciqmc",
 		    "state" : [1],
@@ -161,7 +163,17 @@ cat > bagel.json <<- EOM
 }
 EOM
 
-$bagel_exe bagel.json > bagel.casci.out
+
+MAX_ITER=10
+for i in $(seq 1 $MAX_ITER); do
+    $neci_exe neci.inp > neci.initial.out
+    rm RDMEstimates INITIATORStats FCIMCStats 2RDM_POPSFILE
+    mv 2RDM.1 fciqmc_0_0.rdm2
+    mv 1RDM.1 fciqmc_0_0.rdm1
+    $bagel_exe bagel.json > "bagel.casscf."$i".out"
+    grep "TOTAL ENERGY" neci.initial.out
+done
+
 
 # rotating to semi-canonical orbitals
 cat > bagel.json <<- EOM

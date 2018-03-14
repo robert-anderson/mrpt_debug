@@ -45,11 +45,15 @@
 
     * Using the second-order algorithm
 
-      0  0         0.00000000     6.13e-10      0.01
+      0  0         0.00000000     1.71e-03      0.01
 
-    * Second-order optimization converged. *   
+         res : 3.80e-03   lamb: 1.00e+00   eps : -8.14e-04   step: 7.49e-02    0.00
+         res : 4.14e-04   lamb: 1.00e+00   eps : -8.33e-04   step: 7.67e-02    0.00
+         res : 3.15e-05   lamb: 1.00e+00   eps : -8.33e-04   step: 7.65e-02    0.00
+         res : 2.48e-06   lamb: 1.00e+00   eps : -8.33e-04   step: 7.65e-02    0.00
 
- DOING CANON 
+    * Max iteration reached during the second-order optimization.  Convergence not reached! *   
+
 
     * METHOD: CASSCF                               0.02
 

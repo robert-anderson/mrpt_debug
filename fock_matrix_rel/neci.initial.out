@@ -4,15 +4,15 @@
  Memory Manager initialised with  99999.0 MB
 
  ================================================================
- Compiled on Mar 03 2018 at 18:40:52
+ Compiled on Mar 13 2018 at 06:39:06
  Compiled using configuration:
      cmake-Intel-par-RELEASE
  VCS BASE repository version:
-     215945f6db3c086445683e122cc2ab4205e0652a
+     1baebe99fe29dba4b4fd95ce329db84b9536bad3
  Working directory: 
      /scratch/scratch/mmm0043/work/stochastic_multireference/bagel/interface_test/mrpt_debug/fock_matrix_rel
- Running on: node-k98p-035
- Started running on 07/03/2018 at 02:37:43
+ Running on: node-k98c-013
+ Started running on 14/03/2018 at 14:19:11
  ================================================================
 
  Processing arguments
@@ -98,232 +98,232 @@ end
   Generating abelian symmetry table with  0 generators
   Number of symmetry classes: 1
 HF determinant not yet defined.
-      1      1      0      0      0     -1 ( 0, 0, 0) 0   0       -6.154852812       -6.154852812
-      2      2      0      0      0      1 ( 0, 0, 0) 0   0       -6.154852812       -6.154852812
-      3      3      0      0      0     -1 ( 0, 0, 0) 0   0       -5.944323555       -5.944323555
-      4      4      0      0      0      1 ( 0, 0, 0) 0   0       -5.944323555       -5.944323555
-      5      5      0      0      0     -1 ( 0, 0, 0) 0   0       -1.741259001       -1.741259001
-      6      6      0      0      0      1 ( 0, 0, 0) 0   0       -1.741259001       -1.741259001
-      7      7      0      0      0     -1 ( 0, 0, 0) 0   0       -1.354665758       -1.354665758
-      8      8      0      0      0      1 ( 0, 0, 0) 0   0       -1.354665758       -1.354665758
-      9      9      0      0      0     -1 ( 0, 0, 0) 0   0       -1.354637547       -1.354637547
-     10     10      0      0      0      1 ( 0, 0, 0) 0   0       -1.354637547       -1.354637547
+      1      1      0      0      0     -1 ( 0, 0, 0) 0   0       -6.155989216       -6.155989216
+      2      2      0      0      0      1 ( 0, 0, 0) 0   0       -6.155989216       -6.155989216
+      3      3      0      0      0     -1 ( 0, 0, 0) 0   0       -5.943963566       -5.943963566
+      4      4      0      0      0      1 ( 0, 0, 0) 0   0       -5.943963566       -5.943963566
+      5      5      0      0      0     -1 ( 0, 0, 0) 0   0       -1.759851237       -1.759851237
+      6      6      0      0      0      1 ( 0, 0, 0) 0   0       -1.759851237       -1.759851237
+      7      7      0      0      0     -1 ( 0, 0, 0) 0   0       -1.760672463       -1.760672463
+      8      8      0      0      0      1 ( 0, 0, 0) 0   0       -1.760672463       -1.760672463
+      9      9      0      0      0     -1 ( 0, 0, 0) 0   0       -1.760657720       -1.760657720
+     10     10      0      0      0      1 ( 0, 0, 0) 0   0       -1.760657720       -1.760657720
  Turning Symmetry off
 *** READING PRIMITIVE INTEGRALS FROM FCIDUMP ***
  UMatSize:                   3080
 Memory required for integral storage:     0.4699707031E-01 Mb/Shared Memory
 Allocated              49280 bytes of shared memory named: umat
 Two-electron integrals with a magnitude over    0.1000000E-07 are screened
-Ignoring integral (chem. notation) (   5   3|   9   1): 
- (-3.047930288093900E-009,6.426917324504440E-009)
 Ignoring integral (chem. notation) (   3   5|   9   1): 
- (-3.674672365440680E-009,1.883959371141500E-009)
-Ignoring integral (chem. notation) (   9   7|   5   1): 
- (1.304404690996040E-009,-2.762488388099200E-009)
-Ignoring integral (chem. notation) (   7   9|   5   1): 
- (-5.190838179930400E-010,3.844906572706580E-009)
-Ignoring integral (chem. notation) (   9   1|   5   3): 
- (-3.047930288093900E-009,6.426917324504440E-009)
-Ignoring integral (chem. notation) (   5   5|   7   3): 
- (-3.182991828018250E-009,2.299687571519450E-011)
+ (4.807089914025130E-009,-4.057535438972400E-009)
+Ignoring integral (chem. notation) (   7   7|   7   3): 
+ (3.911478287715170E-009,8.654542712632020E-010)
 Ignoring integral (chem. notation) (   7   7|   9   3): 
- (1.692455231832920E-010,5.478191719306860E-009)
+ (4.924069701769720E-009,-3.873329010916220E-009)
 Ignoring integral (chem. notation) (   1   9|   5   3): 
- (-3.674672365440420E-009,-1.883959371141470E-009)
+ (4.807089914025280E-009,4.057535438970560E-009)
 Ignoring integral (chem. notation) (   9   1|   3   5): 
- (-3.674672365440680E-009,1.883959371141500E-009)
-Ignoring integral (chem. notation) (   7   3|   5   5): 
- (-3.182991828018250E-009,2.299687571519450E-011)
-Ignoring integral (chem. notation) (   9   7|   1   5): 
- (-5.190838251537080E-010,-3.844906571072900E-009)
-Ignoring integral (chem. notation) (   3   7|   5   5): 
- (-3.182991828018320E-009,-2.299687571549450E-011)
-Ignoring integral (chem. notation) (   7   9|   1   5): 
- (1.304404685087870E-009,2.762488393269540E-009)
-Ignoring integral (chem. notation) (   1   9|   3   5): 
- (-3.047930288093930E-009,-6.426917324504180E-009)
-Ignoring integral (chem. notation) (   5   1|   9   7): 
- (1.304404690996040E-009,-2.762488388099200E-009)
+ (4.807089914025130E-009,-4.057535438972400E-009)
+Ignoring integral (chem. notation) (   7   3|   7   7): 
+ (3.911478287715170E-009,8.654542712632020E-010)
 Ignoring integral (chem. notation) (   9   3|   7   7): 
- (1.692455231832920E-010,5.478191719306860E-009)
-Ignoring integral (chem. notation) (   5   5|   3   7): 
- (-3.182991828018320E-009,-2.299687571549450E-011)
-Ignoring integral (chem. notation) (   1   5|   9   7): 
- (-5.190838251537080E-010,-3.844906571072900E-009)
+ (4.924069701769720E-009,-3.873329010916220E-009)
+Ignoring integral (chem. notation) (   7   7|   3   7): 
+ (3.911478287714350E-009,-8.654542712610680E-010)
+Ignoring integral (chem. notation) (   3   7|   7   7): 
+ (3.911478287714350E-009,-8.654542712610680E-010)
 Ignoring integral (chem. notation) (   3   9|   7   7): 
- (1.692455231830130E-010,-5.478191719301410E-009)
-Ignoring integral (chem. notation) (   5   1|   7   9): 
- (-5.190838179930400E-010,3.844906572706580E-009)
+ (4.924069701770090E-009,3.873329010916510E-009)
 Ignoring integral (chem. notation) (   5   3|   1   9): 
- (-3.674672365440420E-009,-1.883959371141470E-009)
-Ignoring integral (chem. notation) (   3   5|   1   9): 
- (-3.047930288093930E-009,-6.426917324504180E-009)
-Ignoring integral (chem. notation) (   1   5|   7   9): 
- (1.304404685087870E-009,2.762488393269540E-009)
+ (4.807089914025280E-009,4.057535438970560E-009)
 Ignoring integral (chem. notation) (   7   7|   3   9): 
- (1.692455231830130E-010,-5.478191719301410E-009)
-Ignoring integral (chem. notation) (   5   4|   9   1): 
- (3.553062493506340E-009,4.911435624297880E-009)
+ (4.924069701770090E-009,3.873329010916510E-009)
 Ignoring integral (chem. notation) (   5   6|   5   1): 
- (1.022747677790950E-010,-3.249837170074440E-009)
+ (4.678976221067970E-009,1.766707228711520E-009)
 Ignoring integral (chem. notation) (   3   6|   9   1): 
- (1.323130643812360E-009,-3.244799974532090E-011)
-Ignoring integral (chem. notation) (   9   8|   5   1): 
- (-2.929721857836380E-010,2.563172973973200E-009)
-Ignoring integral (chem. notation) (   7  10|   5   1): 
- (-2.578647315059890E-009,8.554040226022710E-011)
-Ignoring integral (chem. notation) (   7   4|   3   3): 
- (3.385713235459970E-009,-3.785329253753360E-009)
-Ignoring integral (chem. notation) (   3   4|   7   3): 
- (-1.093123195871710E-009,1.465367754545280E-009)
-Ignoring integral (chem. notation) (   3   8|   3   3): 
- (1.054524668647190E-009,-2.541730286440440E-010)
-Ignoring integral (chem. notation) (   7   8|   3   3): 
- (1.733695646589810E-009,-5.778441341841820E-011)
+ (2.061628818848820E-009,6.355993772961630E-009)
+Ignoring integral (chem. notation) (   9  10|   1   1): 
+ (1.424839395729480E-009,1.023174408730920E-009)
+Ignoring integral (chem. notation) (   7   8|   7   3): 
+ (1.036468265345110E-009,1.754977832184000E-009)
 Ignoring integral (chem. notation) (   7   8|   9   3): 
- (-1.673783092335040E-009,1.449699586171830E-011)
+ (2.327370148911560E-009,8.805125718219970E-009)
 Ignoring integral (chem. notation) (   1  10|   5   3): 
- (2.104739211233770E-009,-7.468360967997320E-010)
+ (-4.684981074355320E-009,-6.506775002717930E-010)
+Ignoring integral (chem. notation) (   9  10|   7   3): 
+ (1.311358397628060E-009,4.580903228201460E-009)
 Ignoring integral (chem. notation) (   9   2|   3   5): 
- (-1.800877573900100E-009,-5.263088986432930E-011)
-Ignoring integral (chem. notation) (   5   6|   5   5): 
- (-1.346590369145800E-009,6.509387384199690E-010)
-Ignoring integral (chem. notation) (   9   8|   1   5): 
- (3.454328863151750E-009,6.947511538112350E-010)
-Ignoring integral (chem. notation) (   7  10|   1   5): 
- (-1.813828126813720E-010,3.518656651822580E-009)
-Ignoring integral (chem. notation) (   1  10|   3   5): 
- (4.545643409283740E-010,-8.239819480789319E-009)
-Ignoring integral (chem. notation) (   5   2|   9   7): 
- (1.552531560521280E-009,4.085998036374160E-009)
-Ignoring integral (chem. notation) (   3   4|   3   7): 
- (-6.998091146321060E-010,2.021082274225180E-009)
-Ignoring integral (chem. notation) (   3   4|   7   7): 
- (2.191610300320280E-010,-1.836661560330900E-009)
-Ignoring integral (chem. notation) (   9   4|   7   7): 
- (1.220333175804410E-009,-1.135005774393070E-009)
-Ignoring integral (chem. notation) (   1   6|   9   7): 
- (-4.136643211176670E-009,1.411875912936350E-009)
-Ignoring integral (chem. notation) (   3  10|   7   7): 
- (-2.589917289197880E-010,-1.646346794264120E-009)
-Ignoring integral (chem. notation) (   7  10|   7   7): 
- (-6.357327343685370E-009,-4.264797673085540E-009)
-Ignoring integral (chem. notation) (   5   2|   7   9): 
- (-7.903275851526230E-010,-7.881775156443440E-009)
+ (-3.702461426618210E-009,5.886992604146650E-009)
+Ignoring integral (chem. notation) (   5   8|   3   5): 
+ (-7.510749601011939E-009,2.172918938666920E-010)
+Ignoring integral (chem. notation) (   9  10|   5   5): 
+ (-1.772428755810140E-010,2.831617795774720E-009)
+Ignoring integral (chem. notation) (   7   4|   7   7): 
+ (4.096941088020890E-010,1.782561212255210E-009)
+Ignoring integral (chem. notation) (   7   8|   3   7): 
+ (-1.451115833776870E-010,2.226476462875790E-009)
+Ignoring integral (chem. notation) (   7   8|   7   7): 
+ (7.363354202649419E-010,2.670724402076870E-009)
+Ignoring integral (chem. notation) (   9  10|   3   7): 
+ (1.741790820031020E-010,4.652195859615140E-009)
+Ignoring integral (chem. notation) (   9  10|   9   7): 
+ (-1.434497736831980E-010,-1.387911387061450E-009)
 Ignoring integral (chem. notation) (   5   4|   1   9): 
- (-2.521457052827210E-009,-3.166601223007440E-009)
-Ignoring integral (chem. notation) (   7   4|   9   9): 
- (-3.951012591691550E-009,-2.261633337610880E-009)
-Ignoring integral (chem. notation) (   1   6|   7   9): 
- (7.904333032138071E-009,-5.202819384433000E-010)
+ (2.423407355427820E-009,-4.269226512473380E-009)
 Ignoring integral (chem. notation) (   7   8|   3   9): 
- (-1.406152447087710E-009,8.756814569029040E-010)
-Ignoring integral (chem. notation) (   3   8|   9   9): 
- (1.129895427269270E-009,4.367554331890870E-009)
-Ignoring integral (chem. notation) (   5   2|   1   2): 
- (4.894529505274260E-009,-5.614582534563860E-009)
-Ignoring integral (chem. notation) (   1   2|   5   2): 
- (4.894529505274260E-009,-5.614582534563860E-009)
-Ignoring integral (chem. notation) (   1   6|   1   2): 
- (5.443892818171280E-009,5.083702651463820E-009)
+ (-3.443518463399370E-009,-6.870560719871470E-009)
 Ignoring integral (chem. notation) (   3   6|   9   2): 
- (-9.065387562251540E-010,-2.196439018723490E-009)
+ (3.067765647838020E-010,-6.384933756553200E-009)
 Ignoring integral (chem. notation) (   7   8|   5   2): 
- (-3.213723963942600E-009,-5.703528276402280E-009)
-Ignoring integral (chem. notation) (   9   8|   5   2): 
- (4.518488379009540E-009,-1.141672721219230E-009)
-Ignoring integral (chem. notation) (   7  10|   5   2): 
- (1.790752727273570E-009,4.302564243370720E-009)
-Ignoring integral (chem. notation) (   9  10|   5   2): 
- (1.825672672331620E-010,-3.792943942490450E-009)
+ (1.645906496023570E-009,6.156621646398000E-010)
 Ignoring integral (chem. notation) (   7   8|   7   4): 
- (9.434565470506860E-010,-3.444440547376870E-009)
-Ignoring integral (chem. notation) (   7   8|   9   4): 
- (5.332159819957620E-009,1.280707360994350E-009)
+ (5.764239582662020E-009,-6.842237390178430E-009)
 Ignoring integral (chem. notation) (   1  10|   5   4): 
- (1.955286173279390E-009,1.349780605114940E-009)
-Ignoring integral (chem. notation) (   9  10|   7   4): 
- (7.232788745868110E-009,-2.443458284895150E-012)
-Ignoring integral (chem. notation) (   1   2|   1   6): 
- (5.443892818171280E-009,5.083702651463820E-009)
+ (3.067765647842280E-010,-6.384933756553430E-009)
 Ignoring integral (chem. notation) (   9   2|   3   6): 
- (-9.065387562251540E-010,-2.196439018723490E-009)
+ (3.067765647838020E-010,-6.384933756553200E-009)
 Ignoring integral (chem. notation) (   7   8|   1   6): 
- (5.810113123137690E-009,-3.016762915761240E-009)
-Ignoring integral (chem. notation) (   9   8|   1   6): 
- (9.861210672245660E-010,4.554815836404940E-009)
-Ignoring integral (chem. notation) (   7  10|   1   6): 
- (-4.361370037804030E-009,1.642540521120570E-009)
-Ignoring integral (chem. notation) (   9  10|   1   6): 
- (3.784439464374500E-009,3.121713067189570E-010)
+ (1.645906496826210E-009,6.156621641442600E-010)
 Ignoring integral (chem. notation) (   5   2|   7   8): 
- (-3.213723963942600E-009,-5.703528276402280E-009)
-Ignoring integral (chem. notation) (   5   2|   9   8): 
- (4.518488379009540E-009,-1.141672721219230E-009)
+ (1.645906496023570E-009,6.156621646398000E-010)
 Ignoring integral (chem. notation) (   7   4|   7   8): 
- (9.434565470506860E-010,-3.444440547376870E-009)
-Ignoring integral (chem. notation) (   9   4|   7   8): 
- (5.332159819957620E-009,1.280707360994350E-009)
+ (5.764239582662020E-009,-6.842237390178430E-009)
 Ignoring integral (chem. notation) (   1   6|   7   8): 
- (5.810113123137690E-009,-3.016762915761240E-009)
-Ignoring integral (chem. notation) (   1   6|   9   8): 
- (9.861210672245660E-010,4.554815836404940E-009)
+ (1.645906496826210E-009,6.156621641442600E-010)
 Ignoring integral (chem. notation) (   7   8|   3   8): 
- (-3.019554344398500E-009,1.907015234154200E-009)
+ (5.764239582661130E-009,-6.842237390178160E-009)
 Ignoring integral (chem. notation) (   3   8|   7   8): 
- (-3.019554344398500E-009,1.907015234154200E-009)
-Ignoring integral (chem. notation) (   9   8|   7   8): 
- (-6.176144446635130E-009,-1.209581843213100E-009)
-Ignoring integral (chem. notation) (   7   8|   9   8): 
- (-6.176144446635130E-009,-1.209581843213100E-009)
-Ignoring integral (chem. notation) (   9  10|   3   8): 
- (-5.341891067908420E-009,-4.876159542971070E-009)
-Ignoring integral (chem. notation) (   3  10|   7   8): 
- (4.042845801112800E-009,-3.705053391805210E-009)
-Ignoring integral (chem. notation) (   9  10|   9   8): 
- (-6.788113046235060E-009,-6.498038542555760E-009)
-Ignoring integral (chem. notation) (   5   2|   7  10): 
- (1.790752727273570E-009,4.302564243370720E-009)
-Ignoring integral (chem. notation) (   5   2|   9  10): 
- (1.825672672331620E-010,-3.792943942490450E-009)
+ (5.764239582661130E-009,-6.842237390178160E-009)
 Ignoring integral (chem. notation) (   5   4|   1  10): 
- (1.955286173279390E-009,1.349780605114940E-009)
-Ignoring integral (chem. notation) (   7   4|   9  10): 
- (7.232788745868110E-009,-2.443458284894380E-012)
-Ignoring integral (chem. notation) (   1   6|   7  10): 
- (-4.361370037804030E-009,1.642540521120570E-009)
-Ignoring integral (chem. notation) (   1   6|   9  10): 
- (3.784439464374500E-009,3.121713067189570E-010)
-Ignoring integral (chem. notation) (   7   8|   3  10): 
- (4.042845801112800E-009,-3.705053391805210E-009)
-Ignoring integral (chem. notation) (   3   8|   9  10): 
- (-5.341891067908420E-009,-4.876159542971070E-009)
-Ignoring integral (chem. notation) (   9   8|   9  10): 
- (-6.788113046235060E-009,-6.498038542555750E-009)
-Ignoring integral (chem. notation) (   9  10|   7  10): 
- (-5.434864090610150E-009,7.665998844306849E-009)
-Ignoring integral (chem. notation) (   7  10|   9  10): 
- (-5.434864090610150E-009,7.665998844306840E-009)
-Ignoring integral (chem. notation) (   5   3|  10   1): 
- (4.545643409283740E-010,8.239819480789319E-009)
+ (3.067765647842280E-010,-6.384933756553430E-009)
 Ignoring integral (chem. notation) (   3   5|  10   1): 
- (2.104739211233770E-009,7.468360967997320E-010)
-Ignoring integral (chem. notation) (   9   7|   6   1): 
- (7.904333032138071E-009,5.202819384433000E-010)
-Ignoring integral (chem. notation) (   7   9|   6   1): 
- (-4.136643211176670E-009,-1.411875912936350E-009)
-Ignoring integral (chem. notation) (   7   3|   4   3): 
- (-6.998091146321060E-010,-2.021082274225180E-009)
+ (-4.684981074355320E-009,6.506775002717930E-010)
+Ignoring integral (chem. notation) (   1   9|   6   3): 
+ (2.061628818848820E-009,-6.355993772961630E-009)
+Ignoring integral (chem. notation) (   9   1|   4   5): 
+ (2.423407355427820E-009,4.269226512473380E-009)
+Ignoring integral (chem. notation) (   5   3|   8   5): 
+ (-7.510749601011939E-009,-2.172918938666920E-010)
+Ignoring integral (chem. notation) (   1   5|   6   5): 
+ (4.678976221067970E-009,-1.766707228711520E-009)
+Ignoring integral (chem. notation) (   7   3|   8   7): 
+ (-1.451115833776870E-010,-2.226476462875790E-009)
+Ignoring integral (chem. notation) (   9   3|   8   7): 
+ (-3.443518463399370E-009,6.870560719871470E-009)
+Ignoring integral (chem. notation) (   7   7|   4   7): 
+ (4.096941088020890E-010,-1.782561212255210E-009)
+Ignoring integral (chem. notation) (   3   7|   8   7): 
+ (1.036468265345110E-009,-1.754977832184000E-009)
+Ignoring integral (chem. notation) (   7   7|   8   7): 
+ (7.363354202649419E-010,-2.670724402076870E-009)
+Ignoring integral (chem. notation) (   3   9|   8   7): 
+ (2.327370148911560E-009,-8.805125718219970E-009)
+Ignoring integral (chem. notation) (   1   1|  10   9): 
+ (1.424839395729480E-009,-1.023174408730920E-009)
+Ignoring integral (chem. notation) (   5   3|   2   9): 
+ (-3.702461426618210E-009,-5.886992604146650E-009)
+Ignoring integral (chem. notation) (   7   3|  10   9): 
+ (1.741790820031020E-010,-4.652195859615140E-009)
+Ignoring integral (chem. notation) (   5   5|  10   9): 
+ (-1.772428755810140E-010,-2.831617795774720E-009)
+Ignoring integral (chem. notation) (   3   7|  10   9): 
+ (1.311358397628060E-009,-4.580903228201460E-009)
+Ignoring integral (chem. notation) (   7   9|  10   9): 
+ (-1.434497736831980E-010,1.387911387061450E-009)
+Ignoring integral (chem. notation) (   3   5|  10   2): 
+ (-1.985242144975380E-009,4.040161181427020E-009)
+Ignoring integral (chem. notation) (   7   7|   8   4): 
+ (6.057505085993010E-009,-1.130615914691810E-009)
+Ignoring integral (chem. notation) (   7   7|  10   4): 
+ (-4.554431103286100E-009,-4.033061616512770E-009)
+Ignoring integral (chem. notation) (   1   9|   6   4): 
+ (-1.985242144976770E-009,4.040161181427860E-009)
+Ignoring integral (chem. notation) (   9   9|   8   4): 
+ (-1.532287159492310E-009,-2.116566427938660E-009)
+Ignoring integral (chem. notation) (   9   1|   4   6): 
+ (-1.985242144974910E-009,-4.040161181428390E-009)
+Ignoring integral (chem. notation) (   7   3|   8   8): 
+ (6.057505085994170E-009,1.130615914692860E-009)
+Ignoring integral (chem. notation) (   9   3|   8   8): 
+ (-4.554431103286940E-009,4.033061616513580E-009)
+Ignoring integral (chem. notation) (   7   7|   4   8): 
+ (6.057505085994460E-009,1.130615914692000E-009)
+Ignoring integral (chem. notation) (   3   7|   8   8): 
+ (6.057505085991160E-009,-1.130615914691340E-009)
+Ignoring integral (chem. notation) (   9   9|   4   8): 
+ (-1.532287159491300E-009,2.116566427937910E-009)
+Ignoring integral (chem. notation) (   3   9|   8   8): 
+ (-4.554431103285690E-009,-4.033061616511860E-009)
+Ignoring integral (chem. notation) (   5   3|   2  10): 
+ (-1.985242144976680E-009,-4.040161181427840E-009)
+Ignoring integral (chem. notation) (   7   3|  10  10): 
+ (-1.532287159491810E-009,2.116566427939350E-009)
+Ignoring integral (chem. notation) (   7   7|   4  10): 
+ (-4.554431103286260E-009,4.033061616512890E-009)
+Ignoring integral (chem. notation) (   3   7|  10  10): 
+ (-1.532287159492130E-009,-2.116566427937690E-009)
+Ignoring integral (chem. notation) (   6   1|   1   2): 
+ (2.834922832734790E-009,5.458903203308630E-012)
+Ignoring integral (chem. notation) (   2   1|   5   2): 
+ (2.834922832734770E-009,-5.458903203328090E-012)
+Ignoring integral (chem. notation) (   2   5|   1   2): 
+ (2.834922832734770E-009,5.458903203326060E-012)
+Ignoring integral (chem. notation) (   4   5|   9   2): 
+ (1.514002753611270E-009,-3.971482127520650E-009)
+Ignoring integral (chem. notation) (   8   7|   5   2): 
+ (-7.164045784069770E-010,2.063991270418020E-009)
+Ignoring integral (chem. notation) (   8   7|   7   4): 
+ (-8.982629900282020E-009,2.289284546255950E-009)
+Ignoring integral (chem. notation) (   8   7|   9   4): 
+ (-3.960625518852760E-009,6.613056572398740E-009)
+Ignoring integral (chem. notation) (   2   9|   5   4): 
+ (1.514002753610960E-009,3.971482127521110E-009)
+Ignoring integral (chem. notation) (   2   1|   1   6): 
+ (2.834922832734790E-009,-5.458903203318720E-012)
+Ignoring integral (chem. notation) (  10   1|   3   6): 
+ (1.514002753610980E-009,3.971482127520970E-009)
+Ignoring integral (chem. notation) (   8   7|   1   6): 
+ (-7.164045780785700E-010,2.063991272510590E-009)
+Ignoring integral (chem. notation) (   6   1|   7   8): 
+ (-7.164045786993450E-010,-2.063991271582580E-009)
+Ignoring integral (chem. notation) (   8   3|   7   8): 
+ (-8.982629900281120E-009,-2.289284546255500E-009)
+Ignoring integral (chem. notation) (  10   3|   7   8): 
+ (-3.960625518852030E-009,-6.613056572397770E-009)
+Ignoring integral (chem. notation) (   2   5|   7   8): 
+ (-7.164045777862070E-010,-2.063991271346030E-009)
+Ignoring integral (chem. notation) (   8   7|   3   8): 
+ (-8.982629900281219E-009,2.289284546255700E-009)
+Ignoring integral (chem. notation) (   4   7|   7   8): 
+ (-8.982629900281760E-009,-2.289284546256010E-009)
+Ignoring integral (chem. notation) (   4   9|   7   8): 
+ (-3.960625518852490E-009,-6.613056572398820E-009)
+Ignoring integral (chem. notation) (   6   3|   1  10): 
+ (1.514002753611040E-009,-3.971482127520990E-009)
+Ignoring integral (chem. notation) (   8   7|   3  10): 
+ (-3.960625518851810E-009,6.613056572398080E-009)
+Ignoring integral (chem. notation) (   4   6|   9   2): 
+ (4.684981074355730E-009,6.506775002721100E-010)
+Ignoring integral (chem. notation) (   2  10|   5   4): 
+ (-2.061628818849050E-009,-6.355993772961390E-009)
+Ignoring integral (chem. notation) (  10   2|   3   6): 
+ (-2.423407355428250E-009,4.269226512473200E-009)
+Ignoring integral (chem. notation) (   6   4|   7   6): 
+ (7.510749601003491E-009,-2.172918938604500E-010)
+Ignoring integral (chem. notation) (   2   6|   5   6): 
+ (-4.678976221072950E-009,-1.766707228721980E-009)
+Ignoring integral (chem. notation) (   8   4|   7   8): 
+ (1.451115833779740E-010,-2.226476462874960E-009)
  Ignored more than 100 integrals.
  Further threshold truncations not reported explicitly
- Number of removed two-index integrals:                    316
- Number of non-zero integrals:                   2708
+ Number of removed two-index integrals:                    156
+ Number of non-zero integrals:                   2878
  ECORE=   4.76259489603000     
  Setting normal GetUMatEl routine
  N_alpha:3 ; N_beta:3 ; LMS:0 ; NEl:6
  Fermi det (D0):(    1,    2,    3,    4,    5,    6)
  Symmetry:  ( 0, 0, 0) 0
- Fock operator energy:  -22.9182758394169     
+ Fock operator energy:  -22.9570131434973     
  Setting normal GetUMatEl routine
  Complex walkers in use.
  Number of simultaneous walker distributions:            1
@@ -337,8 +337,8 @@ Setting integer bit-length of determinants as bit-strings to:     64
  Symmetry and spin of orbitals correctly set up for excitation generators.
  Simply transferring this into a spin orbital representation.
  Not storing the H matrix.
- <D0|H|D0>=  -14.9824793777934     
- <D0|T|D0>=  -27.6808707354469     
+ <D0|H|D0>=  -14.9803420140700     
+ <D0|T|D0>=  -27.7196080395273     
  FDet has     3 alpha electrons, and     3 beta electrons.
                 3  alpha-alpha occupied electron pairs
                 3  beta-beta occupied electron pairs
@@ -350,15 +350,15 @@ Setting integer bit-length of determinants as bit-strings to:     64
  Performing FCIQMC....
  
  Generated reference determinants:
-(    1,    2,    3,    4,    5,    6) E =    -14.982479378
+(    1,    2,    3,    4,    5,    6) E =    -14.980342014
 Symmetry of reference determinant is:          0
 Symmetry of reference determinant from spin orbital symmetry info is:          0
 *********** INITIATOR METHOD IN USE ***********
 Starting with only the reference determinant in the fixed initiator space.
 Value for seed is:           17
-Reference Energy set to:       -14.9824793778
-Highest energy determinant is (approximately):     -1.29113489043968    
-Corresponding to a correlation energy of:      13.6913444873537    
+Reference Energy set to:       -14.9803420141
+Highest energy determinant is (approximately):     -2.13803814148332    
+Corresponding to a correlation energy of:      12.8423038725866    
  Calculating approximate pDoubles for use with excitation generator by looking a excitations from reference.
  Counting magnetic excitations
      42 double excitations, and      12 single excitations found from reference. This will be used to calculate pDoubles.
@@ -381,12 +381,12 @@ Reference processor is:        0
 Initial reference is: (    1,    2,    3,    4,    5,    6)
   Initialising wavefunctions by the Lanczos algorithm
   Aborting Lanczos and initialising trial states with direct diagonalisation
-State  1 eigenvalue:  -15.0005145683    
+State  1 eigenvalue:  -15.0192327162    
  Setting ref           1
 (    1,    2,    3,    4,    5,    6)
 Changing projected energy reference determinant for run  1 on the next update cycle to: (    1,    2,    3,    4,    5,    6)
  Ensuring that Brillouin's theorem is no longer used.
-Reference energy now set to:     -14.9824793777934    
+Reference energy now set to:     -14.9803420140700    
  Regenerating the stored diagonal HElements for all walkers.
  Initial memory (without excitgens + temp arrays) consists of :      22.103516 Mb/Processor
  Only one array of memory to store main particle list allocated...
@@ -410,27 +410,27 @@ Allocated                100 bytes of shared memory named: rdm_spatial_indices
 
 **** RDMs CALCULATED EXPLICITLY ****
 
- 1RDM energy contribution (-27.6158282077006,-2.182038990479097E-015)
+ 1RDM energy contribution (-27.7198897701258,-1.838538446055556E-016)
  == INFORMATION FOR FINAL 1-RDMS =========================================================
 
  INFORMATION FOR 1-RDM 1:
 
- SUM OF 1-RDM(i,i) FOR THE N LOWEST ENERGY HF ORBITALS:      5.8312916893398
+ SUM OF 1-RDM(i,i) FOR THE N LOWEST ENERGY HF ORBITALS:      5.6520165807277
  Writing out the *normalised* 1 electron density matrix to file
  
  Calculating and writing out 1RDM occupations on root process
  
       Natural spin orbital     Occupation
-               1               0.9999999938
-               2               0.9999999938
-               3               0.9999999224
-               4               0.9999999224
-               5               0.9156459285
-               6               0.9156459285
-               7               0.0421806925
-               8               0.0421806925
-               9               0.0421734629
-              10               0.0421734629
+               1               0.9999999866
+               2               0.9999999866
+               3               0.9999998376
+               4               0.9999998376
+               5               0.8260084662
+               6               0.8260084662
+               7               0.0870008088
+               8               0.0870008088
+               9               0.0869909009
+              10               0.0869909009
      Sum:                      6.0000000000
 
  =========================================================================================
@@ -438,12 +438,12 @@ Allocated                100 bytes of shared memory named: rdm_spatial_indices
  == INFORMATION FOR FINAL 2-RDMS =========================================================
 
  2-RDM ESTIMATES FOR STATE 1:
- Trace of 2-el-RDM before normalisation:  7.9396181331E+04
+ Trace of 2-el-RDM before normalisation:  6.6711075182E+04
  Trace of 2-el-RDM after normalisation:  1.5000000000E+01
  Zero-body energy contribution:       4.7625948960E+00
- Energy contribution from the 1-RDM: -2.7615828208E+01
- Energy contribution from the 2-RDM:  7.8527187434E+00
- *TOTAL ENERGY* CALCULATED USING THE *REDUCED DENSITY MATRICES*: -1.5000514568318E+01
+ Energy contribution from the 1-RDM: -2.7719889770E+01
+ Energy contribution from the 2-RDM:  7.9380621579E+00
+ *TOTAL ENERGY* CALCULATED USING THE *REDUCED DENSITY MATRICES*: -1.5019232716235E+01
 
  Hermiticty error estimates:
                0        0.00000000000000000000     (Iteration, MAX ABS ERROR IN HERMITICITY)
@@ -481,17 +481,17 @@ Non-deallocated shared memory found: _scratch_scratch_mmm0043_work_stochastic_mu
 
  Procedure                    Calls       CPU    system     total
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
- NECICUBE                         1      1.14      0.00      1.14
- nElRDMTime                       1      0.57      0.00      0.57
- FinaliseRDMsTime                 1      0.49      0.00      0.49
+ NECICUBE                         1      1.65      0.00      1.65
+ nElRDMTime                       1      0.54      0.00      0.54
+ FinaliseRDMsTime                 1      0.45      0.00      0.45
  SysInit                          1      0.01      0.00      0.01
  SyncTime                         8      0.00      0.00      0.00
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
- Total                                   2.22      0.00      2.22
+ Total                                   2.65      0.00      2.65
 
- Global CPU time          3.09
+ Global CPU time          3.53
  Global system time       0.00
- Global total time        3.09
+ Global total time        3.53
  ================================================================
- Calculation ended 07/03/2018 at 02:37:43
+ Calculation ended 14/03/2018 at 14:19:11
  ================================================================
