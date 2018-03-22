@@ -1,5 +1,5 @@
   * process grid (1, 1) will be used
-    node-k98c-013                   
+    node-k98f-026                   
 
   * using 24 threads per process
 
@@ -27,7 +27,7 @@
   Number of electrons      :        6
 
 
-    * METHOD: MOLECULE                             0.04
+    * METHOD: MOLECULE                             0.03
 
        - 3-index ints prep                         0.00
        - 3-index ints                              0.00
@@ -35,7 +35,7 @@
        - computing inverse                         0.00
        - 3-index ints post                         0.00
        - 3-index ints prep                         0.00
-       - 3-index ints                              0.17
+       - 3-index ints                              0.06
        - 3-index ints post                         0.00
        - 3-index ints prep                         0.00
        - 3-index ints                              0.00
@@ -47,7 +47,7 @@
   *** Geometry (Relativistic) ***
        - 3-index ints post                         0.00
        - 3-index ints prep                         0.00
-       - 3-index ints                              0.01
+       - 3-index ints                              0.00
        - 3-index ints post                         0.00
        - 3-index ints prep                         0.00
        - 3-index ints                              0.00
@@ -67,18 +67,27 @@
 
    * Using the second-order algorithm
 
-         0   0          0.00000000     5.33e-04      0.75
+         0   0          0.00000000     5.33e-04      1.06
 
          res : 7.11e-03   lamb: 1.00e+00   eps : -3.24e-03   step: 2.44e-01    0.02
-         res : 7.15e-04   lamb: 1.00e+00   eps : -3.35e-03   step: 2.45e-01    0.01
-         res : 1.99e-04   lamb: 1.00e+00   eps : -3.35e-03   step: 2.45e-01    0.01
-         res : 4.08e-05   lamb: 1.00e+00   eps : -3.35e-03   step: 2.45e-01    0.01
-         res : 2.72e-06   lamb: 1.00e+00   eps : -3.35e-03   step: 2.45e-01    0.01
+         res : 7.08e-04   lamb: 1.00e+00   eps : -3.35e-03   step: 2.45e-01    0.02
+         res : 1.94e-04   lamb: 1.00e+00   eps : -3.35e-03   step: 2.45e-01    0.02
+         res : 4.17e-05   lamb: 1.00e+00   eps : -3.35e-03   step: 2.45e-01    0.02
+         res : 2.75e-06   lamb: 1.00e+00   eps : -3.35e-03   step: 2.45e-01    0.01
 
     * Max iteration reached during the second-order optimization.  Convergence not reached! *   
 
+       - Coulomb: half trans                       0.00
+       - Coulomb: metric multiply                  0.03
+       - Coulomb: J operator                       0.00
+       - Coulomb: K operator                       0.01
+       - Gaunt: half trans                         0.00
+       - Gaunt: metric multiply                    0.02
+       - Breit: 2-index multiplied                 0.12
+       - Gaunt: J operator                         0.00
+       - Gaunt: K operator                         0.02
 
-    * METHOD: ZCASSCF                              1.70
+    * METHOD: ZCASSCF                              2.13
 
   ------------------------------
   Spin-nonconserving complex FCI
@@ -104,7 +113,7 @@
 
        - Geometry relativistic (total)             0.01
 
-    * Integral transformation done. Elapsed time: 0.57
+    * Integral transformation done. Elapsed time: 0.55
 
        - jop, kop                                  0.00
        - denom                                     0.00

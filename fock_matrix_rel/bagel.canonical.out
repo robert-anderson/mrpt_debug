@@ -1,5 +1,5 @@
   * process grid (1, 1) will be used
-    node-k98c-013                   
+    node-k98f-026                   
 
   * using 24 threads per process
 
@@ -20,7 +20,7 @@
        - 3-index ints                              0.01
        - 2-index ints                              0.00
        - computing inverse                         0.00
-        elapsed time:        0.02 sec.
+        elapsed time:        0.01 sec.
 
 
   Number of basis functions:       28
@@ -35,7 +35,7 @@
        - computing inverse                         0.00
        - 3-index ints post                         0.00
        - 3-index ints prep                         0.00
-       - 3-index ints                              0.10
+       - 3-index ints                              0.07
        - 3-index ints post                         0.00
        - 3-index ints prep                         0.00
        - 3-index ints                              0.00
@@ -47,13 +47,13 @@
   *** Geometry (Relativistic) ***
        - 3-index ints post                         0.00
        - 3-index ints prep                         0.00
-       - 3-index ints                              0.03
+       - 3-index ints                              0.06
        - 3-index ints post                         0.00
        - 3-index ints prep                         0.00
        - 3-index ints                              0.00
        - 3-index ints post                         0.00
 
-       - Geometry relativistic (total)             0.03
+       - Geometry relativistic (total)             0.06
 
     * nclosed  :      0
     * nact     :      5
@@ -67,7 +67,7 @@
 
    * Using the second-order algorithm
 
-         0   0          0.00000000     2.26e-09      0.62
+         0   0          0.00000000     1.81e-09      0.74
 
     * Second-order optimization converged. *   
 
@@ -78,12 +78,10 @@
        - Gaunt: half trans                         0.00
        - Gaunt: metric multiply                    0.02
        - Breit: 2-index multiplied                 0.12
-       - Gaunt: J operator                         0.01
+       - Gaunt: J operator                         0.00
        - Gaunt: K operator                         0.02
-   DOING ZCANON
 
-
-    * METHOD: ZCASSCF                              1.60
+    * METHOD: ZCASSCF                              1.98
 
   ------------------------------
   Spin-nonconserving complex FCI
@@ -101,7 +99,7 @@
   *** Geometry (Relativistic) ***
        - 3-index ints post                         0.00
        - 3-index ints prep                         0.00
-       - 3-index ints                              0.01
+       - 3-index ints                              0.00
        - 3-index ints post                         0.00
        - 3-index ints prep                         0.00
        - 3-index ints                              0.00
@@ -109,7 +107,7 @@
 
        - Geometry relativistic (total)             0.01
 
-    * Integral transformation done. Elapsed time: 0.54
+    * Integral transformation done. Elapsed time: 0.53
 
        - jop, kop                                  0.00
        - denom                                     0.00

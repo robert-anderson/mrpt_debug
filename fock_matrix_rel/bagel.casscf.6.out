@@ -1,5 +1,5 @@
   * process grid (1, 1) will be used
-    node-k98c-013                   
+    node-k98f-026                   
 
   * using 24 threads per process
 
@@ -27,7 +27,7 @@
   Number of electrons      :        6
 
 
-    * METHOD: MOLECULE                             0.04
+    * METHOD: MOLECULE                             0.03
 
        - 3-index ints prep                         0.00
        - 3-index ints                              0.00
@@ -35,7 +35,7 @@
        - computing inverse                         0.00
        - 3-index ints post                         0.00
        - 3-index ints prep                         0.00
-       - 3-index ints                              0.16
+       - 3-index ints                              0.14
        - 3-index ints post                         0.00
        - 3-index ints prep                         0.00
        - 3-index ints                              0.00
@@ -47,13 +47,13 @@
   *** Geometry (Relativistic) ***
        - 3-index ints post                         0.00
        - 3-index ints prep                         0.00
-       - 3-index ints                              0.00
+       - 3-index ints                              0.01
        - 3-index ints post                         0.00
        - 3-index ints prep                         0.00
        - 3-index ints                              0.00
        - 3-index ints post                         0.00
 
-       - Geometry relativistic (total)             0.01
+       - Geometry relativistic (total)             0.02
 
     * nclosed  :      0
     * nact     :      5
@@ -67,12 +67,21 @@
 
    * Using the second-order algorithm
 
-         0   0          0.00000000     1.80e-09      0.66
+         0   0          0.00000000     1.80e-09      1.09
 
     * Second-order optimization converged. *   
 
+       - Coulomb: half trans                       0.00
+       - Coulomb: metric multiply                  0.03
+       - Coulomb: J operator                       0.00
+       - Coulomb: K operator                       0.01
+       - Gaunt: half trans                         0.00
+       - Gaunt: metric multiply                    0.02
+       - Breit: 2-index multiplied                 0.11
+       - Gaunt: J operator                         0.00
+       - Gaunt: K operator                         0.02
 
-    * METHOD: ZCASSCF                              1.41
+    * METHOD: ZCASSCF                              2.07
 
   ------------------------------
   Spin-nonconserving complex FCI
@@ -98,7 +107,7 @@
 
        - Geometry relativistic (total)             0.01
 
-    * Integral transformation done. Elapsed time: 0.53
+    * Integral transformation done. Elapsed time: 0.52
 
        - jop, kop                                  0.00
        - denom                                     0.00

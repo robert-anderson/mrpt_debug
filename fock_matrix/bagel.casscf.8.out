@@ -1,5 +1,5 @@
   * process grid (1, 1) will be used
-    node-k98r-007                   
+    node-k98f-026                   
 
   * using 24 threads per process
 
@@ -45,7 +45,7 @@
 
     * Using the second-order algorithm
 
-      0  0         0.00000000     6.12e-10      0.01
+      0  0         0.00000000     6.15e-10      0.01
 
     * Second-order optimization converged. *   
 

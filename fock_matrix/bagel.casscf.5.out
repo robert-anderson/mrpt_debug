@@ -1,5 +1,5 @@
   * process grid (1, 1) will be used
-    node-k98r-007                   
+    node-k98f-026                   
 
   * using 24 threads per process
 
@@ -20,14 +20,14 @@
        - 3-index ints                              0.01
        - 2-index ints                              0.00
        - computing inverse                         0.00
-        elapsed time:        0.01 sec.
+        elapsed time:        0.02 sec.
 
 
   Number of basis functions:       28
   Number of electrons      :        6
 
 
-    * METHOD: MOLECULE                             0.03
+    * METHOD: MOLECULE                             0.04
 
        - 3-index ints prep                         0.00
        - 3-index ints                              0.00
@@ -45,11 +45,11 @@
 
     * Using the second-order algorithm
 
-      0  0         0.00000000     1.70e-07      0.00
+      0  0         0.00000000     1.70e-07      0.01
 
-         res : 2.61e-07   lamb: 1.00e+00   eps : -3.73e-12   step: 3.11e-06    0.00
-         res : 2.88e-08   lamb: 1.00e+00   eps : -3.81e-12   step: 2.92e-06    0.00
-         res : 2.34e-09   lamb: 1.00e+00   eps : -3.81e-12   step: 2.93e-06    0.00
+         res : 2.57e-07   lamb: 1.00e+00   eps : -3.74e-12   step: 3.07e-06    0.00
+         res : 2.61e-08   lamb: 1.00e+00   eps : -3.81e-12   step: 2.93e-06    0.00
+         res : 2.00e-09   lamb: 1.00e+00   eps : -3.82e-12   step: 2.93e-06    0.00
 
     * Max iteration reached during the second-order optimization.  Convergence not reached! *   
 

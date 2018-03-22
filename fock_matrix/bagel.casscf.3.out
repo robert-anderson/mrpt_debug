@@ -1,5 +1,5 @@
   * process grid (1, 1) will be used
-    node-k98r-007                   
+    node-k98f-026                   
 
   * using 24 threads per process
 
@@ -27,7 +27,7 @@
   Number of electrons      :        6
 
 
-    * METHOD: MOLECULE                             0.03
+    * METHOD: MOLECULE                             0.04
 
        - 3-index ints prep                         0.00
        - 3-index ints                              0.00
@@ -47,11 +47,11 @@
 
       0  0         0.00000000     5.44e-05      0.00
 
-         res : 7.92e-05   lamb: 1.00e+00   eps : -3.40e-07   step: 6.87e-04    0.00
-         res : 1.12e-05   lamb: 1.00e+00   eps : -3.50e-07   step: 6.34e-04    0.00
-         res : 9.41e-07   lamb: 1.00e+00   eps : -3.50e-07   step: 6.34e-04    0.00
-         res : 1.07e-07   lamb: 1.00e+00   eps : -3.50e-07   step: 6.34e-04    0.00
-         res : 8.05e-09   lamb: 1.00e+00   eps : -3.50e-07   step: 6.34e-04    0.00
+         res : 7.86e-05   lamb: 1.00e+00   eps : -3.41e-07   step: 6.85e-04    0.00
+         res : 1.06e-05   lamb: 1.00e+00   eps : -3.50e-07   step: 6.35e-04    0.00
+         res : 8.91e-07   lamb: 1.00e+00   eps : -3.50e-07   step: 6.34e-04    0.00
+         res : 1.01e-07   lamb: 1.00e+00   eps : -3.50e-07   step: 6.34e-04    0.00
+         res : 8.47e-09   lamb: 1.00e+00   eps : -3.50e-07   step: 6.34e-04    0.00
 
     * Max iteration reached during the second-order optimization.  Convergence not reached! *   
 

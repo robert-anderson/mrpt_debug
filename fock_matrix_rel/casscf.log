@@ -11,7 +11,7 @@
     * 6 active electrons in 5 orbitals.
     * gaunt    : true
     * breit    : true
-    * Integral transformation done. Elapsed time: 0.51
+    * Integral transformation done. Elapsed time: 0.59
 
        - jop, kop                                  0.00
        - denom                                     0.00
