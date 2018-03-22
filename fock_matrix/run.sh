@@ -52,12 +52,13 @@ cat > bagel.json <<- EOM
             "title": "hf"
         },
         {
-          "title"  : "casscf",
-          "external_rdm" : "noref",
-          "state" : [1],
-          "maxiter" : 0,
-          "nact"       : $nclosed,
-          "nclosed"    : $nact 
+            "title"  : "casscf",
+            "external_rdm" : "noref",
+            "state" : [1],
+            "maxiter" : 0,
+            "canonical" : true,
+            "nact"       : $nclosed,
+            "nclosed"    : $nact 
         },
         {
             "only_ints": true,
@@ -151,6 +152,7 @@ cat > bagel.json <<- EOM
             "maxiter_micro": 100,
             "nact": $nact,
             "external_rdm" : "fciqmc",
+            "canonical" : true,
             "maxiter": 1
         },
         {

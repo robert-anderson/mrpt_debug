@@ -42,7 +42,6 @@ EOM
 # first, clear out working directory
 for i in $(ls | grep -v 'run.sh'); do rm $i; done
 
-
 # do DHF and dump integrals
 cat > bagel.json <<- EOM
 {
@@ -62,6 +61,7 @@ cat > bagel.json <<- EOM
             "nact": $nact,
             "external_rdm" : "noref",
 		    "state" : [1],
+            "canonical" : true,
             "maxiter": 0
         },
         {
@@ -148,6 +148,7 @@ cat > bagel.json <<- EOM
             "title": "zcasscf",
             "nact": $nact,
             "external_rdm" : "fciqmc",
+            "canonical" : true,
 		    "state" : [1],
             "maxiter": 1
         },
