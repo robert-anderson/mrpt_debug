@@ -29,7 +29,6 @@ read -r -d '' initial_casscf_chunk << EOM
         {
             "title"  : "zcasscf",
             "external_rdm" : "noref",
-            "canonical" : $tpt2,
             "gaunt" : true,
             "breit" : true,
             "state" : [1],
@@ -75,6 +74,8 @@ read -r -d '' casscf_chunk << EOM
             "title": "zcasscf",
             "nclosed": $nclosed,
             "nact": $nact,
+            "gaunt" : true,
+            "breit" : true,
             "state" : [1],
             "external_rdm" : "fciqmc",
             "canonical" : $tpt2,
@@ -117,6 +118,8 @@ read -r -d '' dump_fockmat_chunk << EOM
         {
             "state": [1],
             "nclosed": $nclosed,
+            "gaunt" : true,
+            "breit" : true,
             "title": "zcasscf",
             "maxiter_micro": 100,
             "algorithm" : "noopt",
