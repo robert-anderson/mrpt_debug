@@ -36,6 +36,7 @@
             "state": [1],
             "nclosed": 0,
             "title": "zcasscf",
+            "canonical" : true,
             "maxiter_micro": 100,
             "nact": 5,
             "maxiter": 100
