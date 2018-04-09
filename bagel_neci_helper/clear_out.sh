@@ -9,8 +9,8 @@ case "$response" in
         ;;
 esac
 
-rm neci_iter* -r 2> /dev/null
-rm neci_caspt2 -r 2> /dev/null
+rm -r neci_iter* 2> /dev/null
+rm -r neci_caspt2 2> /dev/null
 rm fciqmc_0_0.rdm* 2> /dev/null
 rm *.out 2> /dev/null
 rm ref.archive 2> /dev/null
