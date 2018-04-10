@@ -16,7 +16,7 @@ else
 fi
 
 MAX_ITER=10
-TOL="1e-8"
+TOL="1e-2"
 
 sh init_neci_casscf.sh
 
@@ -50,6 +50,47 @@ fi
 if [ "$tpt2" == "false" ] ; then
     exit 0;
 fi
+
+mkdir prefock
+cd prefock
+ln -s ../FCIDUMP .
+$neci_exe ../neci.inp > neci.out
+cd ..
+if [ -e ./fciqmc_0_0.rdm1 ]; then
+    rm fciqmc_0_0.rdm1
+fi
+
+if [ -e ./fciqmc_0_0.rdm2 ]; then
+    rm fciqmc_0_0.rdm2
+fi
+ln -s prefock/1RDM.1 fciqmc_0_0.rdm1
+ln -s prefock/2RDM.1 fciqmc_0_0.rdm2
+
+cat > bagel.json <<- EOM
+{
+    "bagel" : [
+		$mol_chunk
+		$prefock
+	]
+}
+EOM
+cat bagel.json > prefock.json
+$bagel_exe bagel.json > 'bagel.prefock.out' 
+
+mkdir prefock2
+cd prefock2
+ln -s ../FCIDUMP .
+$neci_exe ../neci.inp > neci.out
+cd ..
+if [ -e ./fciqmc_0_0.rdm1 ]; then
+    rm fciqmc_0_0.rdm1
+fi
+
+if [ -e ./fciqmc_0_0.rdm2 ]; then
+    rm fciqmc_0_0.rdm2
+fi
+ln -s prefock2/1RDM.1 fciqmc_0_0.rdm1
+ln -s prefock2/2RDM.1 fciqmc_0_0.rdm2
 
 cat > bagel.json <<- EOM
 {

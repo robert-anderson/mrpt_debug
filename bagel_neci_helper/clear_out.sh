@@ -25,3 +25,5 @@ rm neci.highbody.inp 2> /dev/null
 rm bagel.json 2> /dev/null
 rm FCIDUMP 2> /dev/null
 rm FOCKMAT 2> /dev/null
+rm -rf prefock
+rm -rf prefock2

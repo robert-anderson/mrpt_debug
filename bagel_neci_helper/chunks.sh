@@ -108,6 +108,28 @@ read -r -d '' casscf_chunk << EOM
 EOM
 fi
 
+if [ "$trel" == "true" ] ; then
+read -r -d '' prefock << EOM
+        {
+            "state": [1],
+            "nclosed": $nclosed,
+            "title": "zcasscf",
+            "algorithm" : "noopt",
+            "canonical" : true,
+            "nact": $nact,
+            "external_rdm" : "fciqmc",
+            "maxiter": 1
+        },
+		{
+		    "title" : "zfci",
+		    "only_ints" : true,
+		    "ncore" : $nclosed,
+		    "norb" : $nact,
+		    "frozen" : false,
+		    "state" : [1]
+		}
+EOM
+fi
 
 if [ "$trel" == "true" ] ; then
 read -r -d '' dump_fockmat_chunk << EOM
@@ -115,7 +137,6 @@ read -r -d '' dump_fockmat_chunk << EOM
             "state": [1],
             "nclosed": $nclosed,
             "title": "zcasscf",
-            "maxiter_micro": 100,
             "algorithm" : "noopt",
             "nact": $nact,
             "external_rdm" : "fciqmc",
